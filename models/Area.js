@@ -1,17 +1,22 @@
-const { Model, DataTypes } = require('sequelize');
-const sequelize = require('../config/connection');
+import { Sequelize, UUIDV4} from 'sequelize';
+import { dbConnect } from '../config/connection.js';
+const { Model, DataTypes } = Sequelize;
 
-class Area extends Model {}
+export class Area extends Model {}
 
 Area.init(
     {
-
+        id: {
+            type: DataTypes.UUID,
+            defaultValue: UUIDV4,
+            primaryKey: true,
+            allowNull: false
+        }
     },
     {
-        sequelize,
+        sequelize: dbConnect,
         freezeTableName: true,
+        timestamps: false,
         modelName: 'area',
     }
 );
-
-module.exports = Area;

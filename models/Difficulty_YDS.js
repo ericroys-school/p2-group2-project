@@ -1,17 +1,22 @@
-const { Model, DataTypes } = require('sequelize');
-const sequelize = require('../config/connection');
+import { Sequelize, UUIDV4} from 'sequelize';
+const { Model, DataTypes } = Sequelize;
+import { dbConnect } from '../config/connection.js';
 
-class Difficulty_YDS extends Model {}
+export class Difficulty_YDS extends Model {}
 
 Difficulty_YDS.init(
     {
-
+        id: {
+            type: DataTypes.UUID,
+            defaultValue: UUIDV4,
+            primaryKey: true,
+            allowNull: false
+        }
     },
     {
-        sequelize,
+        sequelize: dbConnect,
         freezeTableName: true,
+        timestamps: false,
         modelName: 'difficulty_yds',
     }
 );
-
-module.exports = Difficulty_YDS;

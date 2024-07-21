@@ -1,17 +1,22 @@
-const { Model, DataTypes } = require('sequelize');
-const sequelize = require('../config/connection');
+import { Sequelize, UUIDV4} from 'sequelize';
+const { Model, DataTypes } = Sequelize;
+import { dbConnect } from '../config/connection.js';
 
-class Climb_Activity extends Model {}
+export class Climb_Activity extends Model {}
 
 Climb_Activity.init(
     {
-
+        id: {
+            type: DataTypes.UUID,
+            defaultValue: UUIDV4,
+            primaryKey: true,
+            allowNull: false
+        }
     },
     {
-        sequelize,
+        sequelize: dbConnect,
         freezeTableName: true,
+        timestamps: false,
         modelName: 'climb_activity',
     }
 );
-
-module.exports = Climb_Activity;
