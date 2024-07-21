@@ -8,7 +8,13 @@ import { Climb } from '../models/Climb.js'
 import { Difficulty_YDS } from "../models/Difficulty_YDS.js";
 import { Location } from "../models/Location.js";
 
-//force sync of the data model
-await dbConnect.sync({ force: true });
-
-//TODO: Add the data import stuff to populate the tables
+export {
+    User,
+    Activity_Comment,
+    Area,
+    Climb_Comment,
+    Climb_Activity,
+    Climb,
+    Difficulty_YDS,
+    Location
+};
