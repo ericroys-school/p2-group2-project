@@ -1,5 +1,5 @@
 import express from "express";
-import { router as apiRouter } from "./controllers/api/index.js";
+import { apiRoutes } from "./controllers/api/index.js";
 import { dbConnect } from "./config/connection.js";
 import { create } from "express-handlebars";
 import path from "node:path";
@@ -11,7 +11,7 @@ const dir = path.dirname(fileURLToPath(import.meta.url));
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(apiRouter);
+app.use(apiRoutes);
 app.engine("handlebars", create({}).engine);
 app.set("view engine", "handlebars");
 app.use(express.static("public"));
