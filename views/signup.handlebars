@@ -1,0 +1,18 @@
+<div>
+    {{#if logged in}}
+    <h1> Logg out</h1>
+    {{else}}
+    <h1> Log in</h1>
+</div>
+<h1>Sign Up</h1>
+<div>
+    <form action="/signup" method="post" >
+        <input placeholder="Name" name="name" type="text">
+        <br>
+        <input placeholder="Password" name="password" type="password">
+        <br>
+        <input class="sub" type="submit">
+    </form>
+
+       <a href="/">Go back to login page</a>
+</div>
