@@ -1,0 +1,266 @@
+[
+    //MEDICINE WALL
+    {
+        "id": "bb053566-0ef7-44fc-809b-5aa24800f011",
+        "name": "Two Cracked Teeth",
+        "area_id": "f019686a-b178-4b4a-a999-1f26bf00debe",
+        "difficulty_id": "",
+        "length": 15,
+        "coordinates": "29.60343, -98.55349"
+    },
+    {
+        "id": "b18b30a9-1c8e-43a2-9856-369a5a1369c3",
+        "name": "Fear Of Falling",
+        "area_id": "f019686a-b178-4b4a-a999-1f26bf00debe",
+        "difficulty_id": "",
+        "length": 15,
+        "coordinates": "29.60343, -98.55349"
+    },
+    {
+        "id": "f0a1bb7f-b458-46ac-bd57-335064ab75c1",
+        "name": "Adverse Reaction To Gravity",
+        "area_id": "f019686a-b178-4b4a-a999-1f26bf00debe",
+        "difficulty_id": "",
+        "length": 17,
+        "coordinates": "29.60351, -98.55424"
+    },
+    {
+        "id": "b42e8916-80f9-4c58-8672-39da23c71af6",
+        "name": "Time Machine",
+        "area_id": "f019686a-b178-4b4a-a999-1f26bf00debe",
+        "difficulty_id": "",
+        "length": 15,
+        "coordinates": "29.60351, -98.55424"
+    },
+    {
+        "id": "05d31eae-8b71-41d7-8c94-2154321b6744",
+        "name": "Texas Caterpillar",
+        "area_id": "f019686a-b178-4b4a-a999-1f26bf00debe",
+        "difficulty_id": "",
+        "length": 15,
+        "coordinates": "29.60348, -98.55398"
+    },
+    {
+        "id": "55f21262-5ec9-4b2c-a43c-47d0526165f8",
+        "name": "Crossover",
+        "area_id": "f019686a-b178-4b4a-a999-1f26bf00debe",
+        "difficulty_id": "",
+        "length": 20,
+        "coordinates": "29.60348, -98.55398"
+    },
+
+
+
+
+    //QUEEN CREEK CANYON
+    {
+        "id": "",
+        "name": "",
+        "area_id": "4e311d9c-584c-4a02-bcc8-5bae60b60115",
+        "difficulty_id": "",
+        "length": ,
+        "coordinates": ""
+    },
+    {
+        "id": "",
+        "name": "",
+        "area_id": "4e311d9c-584c-4a02-bcc8-5bae60b60115",
+        "difficulty_id": "",
+        "length": ,
+        "coordinates": ""
+    },
+    {
+        "id": "",
+        "name": "",
+        "area_id": "4e311d9c-584c-4a02-bcc8-5bae60b60115",
+        "difficulty_id": "",
+        "length": ,
+        "coordinates": ""
+    },
+    {
+        "id": "",
+        "name": "",
+        "area_id": "4e311d9c-584c-4a02-bcc8-5bae60b60115",
+        "difficulty_id": "",
+        "length": ,
+        "coordinates": ""
+    },
+    {
+        "id": "",
+        "name": "",
+        "area_id": "4e311d9c-584c-4a02-bcc8-5bae60b60115",
+        "difficulty_id": "",
+        "length": ,
+        "coordinates": ""
+    },
+    {
+        "id": "",
+        "name": "",
+        "area_id": "4e311d9c-584c-4a02-bcc8-5bae60b60115",
+        "difficulty_id": "",
+        "length": ,
+        "coordinates": ""
+    },
+
+
+
+
+
+    //JOSHUA TREE
+    {
+        "id": "",
+        "name": "",
+        "area_id": "c5b308fe-11d3-4a4d-bce1-273a18cad7b2",
+        "difficulty_id": "",
+        "length": ,
+        "coordinates": ""
+    },
+    {
+        "id": "",
+        "name": "",
+        "area_id": "c5b308fe-11d3-4a4d-bce1-273a18cad7b2",
+        "difficulty_id": "",
+        "length": ,
+        "coordinates": ""
+    },
+    {
+        "id": "",
+        "name": "",
+        "area_id": "c5b308fe-11d3-4a4d-bce1-273a18cad7b2",
+        "difficulty_id": "",
+        "length": ,
+        "coordinates": ""
+    },
+    {
+        "id": "",
+        "name": "",
+        "area_id": "c5b308fe-11d3-4a4d-bce1-273a18cad7b2",
+        "difficulty_id": "",
+        "length": ,
+        "coordinates": ""
+    },
+    {
+        "id": "",
+        "name": "",
+        "area_id": "c5b308fe-11d3-4a4d-bce1-273a18cad7b2",
+        "difficulty_id": "",
+        "length": ,
+        "coordinates": ""
+    },
+    {
+        "id": "",
+        "name": "",
+        "area_id": "c5b308fe-11d3-4a4d-bce1-273a18cad7b2",
+        "difficulty_id": "",
+        "length": ,
+        "coordinates": ""
+    },
+
+
+
+
+
+    //INDIAN CREEK
+    {
+        "id": "",
+        "name": "",
+        "area_id": "f168dfb9-3c20-4b91-a4ae-4d76feded74e",
+        "difficulty_id": "",
+        "length": ,
+        "coordinates": ""
+    },
+    {
+        "id": "",
+        "name": "",
+        "area_id": "f168dfb9-3c20-4b91-a4ae-4d76feded74e",
+        "difficulty_id": "",
+        "length": ,
+        "coordinates": ""
+    },
+    {
+        "id": "",
+        "name": "",
+        "area_id": "f168dfb9-3c20-4b91-a4ae-4d76feded74e",
+        "difficulty_id": "",
+        "length": ,
+        "coordinates": ""
+    },
+    {
+        "id": "",
+        "name": "",
+        "area_id": "f168dfb9-3c20-4b91-a4ae-4d76feded74e",
+        "difficulty_id": "",
+        "length": ,
+        "coordinates": ""
+    },
+    {
+        "id": "",
+        "name": "",
+        "area_id": "f168dfb9-3c20-4b91-a4ae-4d76feded74e",
+        "difficulty_id": "",
+        "length": ,
+        "coordinates": ""
+    },
+    {
+        "id": "",
+        "name": "",
+        "area_id": "f168dfb9-3c20-4b91-a4ae-4d76feded74e",
+        "difficulty_id": "",
+        "length": ,
+        "coordinates": ""
+    },
+
+
+
+
+
+    //DEVIL'S TOWER
+    {
+        "id": "",
+        "name": "",
+        "area_id": "fbcf79e2-3704-4821-bb06-c37c311d3bd3",
+        "difficulty_id": "",
+        "length": ,
+        "coordinates": ""
+    },
+    {
+        "id": "",
+        "name": "",
+        "area_id": "fbcf79e2-3704-4821-bb06-c37c311d3bd3",
+        "difficulty_id": "",
+        "length": ,
+        "coordinates": ""
+    },
+    {
+        "id": "",
+        "name": "",
+        "area_id": "fbcf79e2-3704-4821-bb06-c37c311d3bd3",
+        "difficulty_id": "",
+        "length": ,
+        "coordinates": ""
+    },
+    {
+        "id": "",
+        "name": "",
+        "area_id": "fbcf79e2-3704-4821-bb06-c37c311d3bd3",
+        "difficulty_id": "",
+        "length": ,
+        "coordinates": ""
+    },
+    {
+        "id": "",
+        "name": "",
+        "area_id": "fbcf79e2-3704-4821-bb06-c37c311d3bd3",
+        "difficulty_id": "",
+        "length": ,
+        "coordinates": ""
+    },
+    {
+        "id": "",
+        "name": "",
+        "area_id": "fbcf79e2-3704-4821-bb06-c37c311d3bd3",
+        "difficulty_id": "",
+        "length": ,
+        "coordinates": ""
+    }
+]
