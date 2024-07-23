@@ -162,52 +162,52 @@
 
     //INDIAN CREEK
     {
-        "id": "",
-        "name": "",
+        "id": "ac82ec28-c28b-4a73-81c4-b998899888be",
+        "name": "Useful Public Service",
         "area_id": "f168dfb9-3c20-4b91-a4ae-4d76feded74e",
         "difficulty_id": "",
-        "length": ,
-        "coordinates": ""
+        "length": 64,
+        "coordinates": "38.10607, -109.57104"
     },
     {
-        "id": "",
-        "name": "",
+        "id": "e16b1b97-bf9b-452c-baa8-f401d6677599",
+        "name": "Light Duty",
         "area_id": "f168dfb9-3c20-4b91-a4ae-4d76feded74e",
         "difficulty_id": "",
-        "length": ,
-        "coordinates": ""
+        "length": 15,
+        "coordinates": "38.10607, -109.57104"
     },
     {
-        "id": "",
-        "name": "",
+        "id": "d3f77778-ece1-4c2d-9fd2-94dbadf11f6d",
+        "name": "Good Excuse",
         "area_id": "f168dfb9-3c20-4b91-a4ae-4d76feded74e",
         "difficulty_id": "",
-        "length": ,
-        "coordinates": ""
+        "length": 18,
+        "coordinates": "38.08284, -109.56274"
     },
     {
-        "id": "",
-        "name": "",
+        "id": "7f268b42-993b-466d-bc5f-5344fed6ca83",
+        "name": "Slot Machine",
         "area_id": "f168dfb9-3c20-4b91-a4ae-4d76feded74e",
         "difficulty_id": "",
-        "length": ,
-        "coordinates": ""
+        "length": 42,
+        "coordinates": "38.08284, -109.56274"
     },
     {
-        "id": "",
-        "name": "",
+        "id": "a5c7d42f-02ef-4c03-8d7d-268cc0bdd83d",
+        "name": "Generic Spark",
         "area_id": "f168dfb9-3c20-4b91-a4ae-4d76feded74e",
         "difficulty_id": "",
-        "length": ,
-        "coordinates": ""
+        "length": 15,
+        "coordinates": "38.04022, -109.59149"
     },
     {
-        "id": "",
-        "name": "",
+        "id": "a225d74d-b5c5-4685-bb05-4d712408e155",
+        "name": "What A Fool Believes",
         "area_id": "f168dfb9-3c20-4b91-a4ae-4d76feded74e",
         "difficulty_id": "",
-        "length": ,
-        "coordinates": ""
+        "length": 18,
+        "coordinates": "38.04022, -109.59149"
     },
 
 
