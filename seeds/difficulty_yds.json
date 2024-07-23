@@ -1,5 +1,4 @@
 [
-    //MEDICINE WALL
     {
         "id": "c8deeb7f-a5c5-4c31-90c2-372aeca89885",
         "name": "5.9",
@@ -30,8 +29,6 @@
         "name": "5.10b",
         "climb_id": ""
     },
-
-    //QUEEN CREEK CANYON
     {
         "id": "4f6264bb-6064-46fc-9f1c-8b96dd036236",
         "name": "5.9",
@@ -62,8 +59,6 @@
         "name": "5.11a",
         "climb_id": ""
     },
-
-    //JOSHUA TREE
     {
         "id": "6fc2cd9e-cfcf-4a86-b9b0-c25ae9328fcb",
         "name": "5.9",
@@ -94,8 +89,6 @@
         "name": "5.8",
         "climb_id": ""
     },
-
-    //INDIAN CREEK
     {
         "id": "b33430b7-2ade-42cc-9441-89e6b4e30a8b",
         "name": "5.10d",
@@ -126,8 +119,6 @@
         "name": "5.12a",
         "climb_id": ""
     },
-
-    //DEVIL'S TOWER
     {
         "id": "8afa422b-de83-4f5e-8df4-56672cb5cb72",
         "name": "5.12c",
