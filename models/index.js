@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-// TODO: Add models
-=======
 import { dbConnect } from "../config/connection.js";
 import { User } from '../models/User.js'
 import { Activity_Comment } from '../models/Activity_Comment.js'
@@ -21,4 +18,3 @@ export {
     Difficulty_YDS,
     Location
 };
->>>>>>> origin
