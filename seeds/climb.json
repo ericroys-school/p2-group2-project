@@ -216,51 +216,51 @@
 
     //DEVIL'S TOWER
     {
-        "id": "",
-        "name": "",
+        "id": "70f8100a-fe84-4c10-a813-13846fe388aa",
+        "name": "Blue Stem Skyway",
         "area_id": "fbcf79e2-3704-4821-bb06-c37c311d3bd3",
         "difficulty_id": "",
-        "length": ,
-        "coordinates": ""
+        "length": 44,
+        "coordinates": "44.58978, -104.71537"
     },
     {
-        "id": "",
-        "name": "",
+        "id": "9cb01524-2a09-4180-8317-a569917370df",
+        "name": "Durrance",
         "area_id": "fbcf79e2-3704-4821-bb06-c37c311d3bd3",
         "difficulty_id": "",
-        "length": ,
-        "coordinates": ""
+        "length": 152,
+        "coordinates": "44.58978, -104.71537"
     },
     {
-        "id": "",
-        "name": "",
+        "id": "0b4bb4c0-4dfa-4e20-831a-65cd342dcd19",
+        "name": "Spiney Norman",
         "area_id": "fbcf79e2-3704-4821-bb06-c37c311d3bd3",
         "difficulty_id": "",
-        "length": ,
-        "coordinates": ""
+        "length": 48,
+        "coordinates": "44.59158, -104.71485"
     },
     {
-        "id": "",
-        "name": "",
+        "id": "0bef8e14-9039-471c-a1fc-2ac973b9e978",
+        "name": "Friend Of The Devil",
         "area_id": "fbcf79e2-3704-4821-bb06-c37c311d3bd3",
         "difficulty_id": "",
-        "length": ,
-        "coordinates": ""
+        "length": 52,
+        "coordinates": "44.59158, -104.71485"
     },
     {
-        "id": "",
-        "name": "",
+        "id": "2727b26a-ffd9-4094-a006-b33a23cc20b5",
+        "name": "Fractal",
         "area_id": "fbcf79e2-3704-4821-bb06-c37c311d3bd3",
         "difficulty_id": "",
-        "length": ,
-        "coordinates": ""
+        "length": 39,
+        "coordinates": "44.59062, -104.71615"
     },
     {
-        "id": "",
-        "name": "",
+        "id": "cf0a95db-faad-4e6a-a38e-ddca23110f27",
+        "name": "A Bridge Too Far",
         "area_id": "fbcf79e2-3704-4821-bb06-c37c311d3bd3",
         "difficulty_id": "",
-        "length": ,
-        "coordinates": ""
+        "length": 36,
+        "coordinates": "44.59062, -104.71615"
     }
 ]
