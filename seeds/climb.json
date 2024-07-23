@@ -1,0 +1,242 @@
+[
+    {
+        "id": "bb053566-0ef7-44fc-809b-5aa24800f011",
+        "name": "Two Cracked Teeth",
+        "area_id": "f019686a-b178-4b4a-a999-1f26bf00debe",
+        "difficulty_id": "c8deeb7f-a5c5-4c31-90c2-372aeca89885",
+        "length": 15,
+        "coordinates": "29.60343, -98.55349"
+    },
+    {
+        "id": "b18b30a9-1c8e-43a2-9856-369a5a1369c3",
+        "name": "Fear Of Falling",
+        "area_id": "f019686a-b178-4b4a-a999-1f26bf00debe",
+        "difficulty_id": "36aac5d9-a199-4e32-aa38-6dc68c583624",
+        "length": 15,
+        "coordinates": "29.60343, -98.55349"
+    },
+    {
+        "id": "f0a1bb7f-b458-46ac-bd57-335064ab75c1",
+        "name": "Adverse Reaction To Gravity",
+        "area_id": "f019686a-b178-4b4a-a999-1f26bf00debe",
+        "difficulty_id": "bb5e755f-7e92-4c0d-9c60-bf8c1fdda21a",
+        "length": 17,
+        "coordinates": "29.60351, -98.55424"
+    },
+    {
+        "id": "b42e8916-80f9-4c58-8672-39da23c71af6",
+        "name": "Time Machine",
+        "area_id": "f019686a-b178-4b4a-a999-1f26bf00debe",
+        "difficulty_id": "477e7d31-0544-4f73-9628-c289e2698d51",
+        "length": 15,
+        "coordinates": "29.60351, -98.55424"
+    },
+    {
+        "id": "05d31eae-8b71-41d7-8c94-2154321b6744",
+        "name": "Texas Caterpillar",
+        "area_id": "f019686a-b178-4b4a-a999-1f26bf00debe",
+        "difficulty_id": "ffdff59d-2112-49d6-8517-f1ea67c174f5",
+        "length": 15,
+        "coordinates": "29.60348, -98.55398"
+    },
+    {
+        "id": "55f21262-5ec9-4b2c-a43c-47d0526165f8",
+        "name": "Crossover",
+        "area_id": "f019686a-b178-4b4a-a999-1f26bf00debe",
+        "difficulty_id": "a1d505d4-dacc-4826-a94c-9920928e5e75",
+        "length": 20,
+        "coordinates": "29.60348, -98.55398"
+    },
+    {
+        "id": "ea1c66c9-9fd6-4f36-b3c3-4fa33e62991e",
+        "name": "Knotty Tower",
+        "area_id": "4e311d9c-584c-4a02-bcc8-5bae60b60115",
+        "difficulty_id": "4f6264bb-6064-46fc-9f1c-8b96dd036236",
+        "length": 9,
+        "coordinates": "33.28612, -111.07589"
+    },
+    {
+        "id": "33c4aa80-1da4-4e3b-a140-f624bd175efc",
+        "name": "Victorio",
+        "area_id": "4e311d9c-584c-4a02-bcc8-5bae60b60115",
+        "difficulty_id": "37b27a2b-7718-4294-ace6-b78b07463e54",
+        "length": 91,
+        "coordinates": "33.28612, -111.07589"
+    },
+    {
+        "id": "51c97c16-4d74-4ce1-8f89-d2bd8d27a9ca",
+        "name": "Broken Arrow",
+        "area_id": "4e311d9c-584c-4a02-bcc8-5bae60b60115",
+        "difficulty_id": "2c52c363-b5ce-49dd-b4b0-75637eeb26ae",
+        "length": 45,
+        "coordinates": "33.28809, -111.07704"
+    },
+    {
+        "id": "25129f11-4639-4b5e-ab32-d56a635a0221",
+        "name": "Puzzle Pieces",
+        "area_id": "4e311d9c-584c-4a02-bcc8-5bae60b60115",
+        "difficulty_id": "d7b68b7b-b2e4-4cec-beb8-175ce178e40b",
+        "length": 45,
+        "coordinates": "33.28809, -111.07704"
+    },
+    {
+        "id": "418faa1b-1c67-4b4c-bbe6-032f4601a972",
+        "name": "Heaven Can Wait",
+        "area_id": "4e311d9c-584c-4a02-bcc8-5bae60b60115",
+        "difficulty_id": "70e0992a-ca76-40d7-869c-2caf05377263",
+        "length": 21,
+        "coordinates": "33.2728, -111.0475"
+    },
+    {
+        "id": "a337ea77-b87a-4e9e-9d09-ceddd0d0fa4f",
+        "name": "Eyes Of The World",
+        "area_id": "4e311d9c-584c-4a02-bcc8-5bae60b60115",
+        "difficulty_id": "323b0af6-b9ca-4e61-80d5-789a22986358",
+        "length": 35,
+        "coordinates": "33.27681, -111.02935"
+    },
+    {
+        "id": "ce7fed7c-2f1c-4d75-92c9-a599d97f764a",
+        "name": "Touch And Go",
+        "area_id": "c5b308fe-11d3-4a4d-bce1-273a18cad7b2",
+        "difficulty_id": "6fc2cd9e-cfcf-4a86-b9b0-c25ae9328fcb",
+        "length": 21,
+        "coordinates": "34.02283, -116.15688"
+    },
+    {
+        "id": "2665ff8c-74fd-42e9-94b7-8ec9d0b5f154",
+        "name": "The Cornerstone",
+        "area_id": "c5b308fe-11d3-4a4d-bce1-273a18cad7b2",
+        "difficulty_id": "0035ae3d-0607-4d1b-a297-95ffae8782e2",
+        "length": 24,
+        "coordinates": "34.02283, -116.15688"
+    },
+    {
+        "id": "454528a5-31c9-4578-9f60-f13f70adeaa1",
+        "name": "The Prayer",
+        "area_id": "c5b308fe-11d3-4a4d-bce1-273a18cad7b2",
+        "difficulty_id": "7881c372-020e-4974-8eaa-edc70115c122",
+        "length": 9,
+        "coordinates": "34.10981, -116.13302"
+    },
+    {
+        "id": "90305add-d5ef-4611-b874-4633462b0cfe",
+        "name": "Etude No.5",
+        "area_id": "c5b308fe-11d3-4a4d-bce1-273a18cad7b2",
+        "difficulty_id": "993bbaea-c97e-43bc-a488-5e8e8ea6d3e1",
+        "length": 8,
+        "coordinates": "34.10981, -116.13302"
+    },
+    {
+        "id": "d69a3bdd-8450-46e3-9e08-8a86f2b085b1",
+        "name": "MetroLink",
+        "area_id": "c5b308fe-11d3-4a4d-bce1-273a18cad7b2",
+        "difficulty_id": "10fa8e96-9c7e-4318-b6e0-6c78ab23226e",
+        "length": 24,
+        "coordinates": "34.0233, -116.17866"
+    },
+    {
+        "id": "708ecf93-cb35-4660-b320-f786d2fc3cef",
+        "name": "Cake Walk",
+        "area_id": "c5b308fe-11d3-4a4d-bce1-273a18cad7b2",
+        "difficulty_id": "f3f401d8-9803-4dc8-86a5-9cf9c8126072",
+        "length": 27,
+        "coordinates": "34.0233, -116.17866"
+    },
+    {
+        "id": "ac82ec28-c28b-4a73-81c4-b998899888be",
+        "name": "Useful Public Service",
+        "area_id": "f168dfb9-3c20-4b91-a4ae-4d76feded74e",
+        "difficulty_id": "b33430b7-2ade-42cc-9441-89e6b4e30a8b",
+        "length": 64,
+        "coordinates": "38.10607, -109.57104"
+    },
+    {
+        "id": "e16b1b97-bf9b-452c-baa8-f401d6677599",
+        "name": "Light Duty",
+        "area_id": "f168dfb9-3c20-4b91-a4ae-4d76feded74e",
+        "difficulty_id": "1b095e19-c892-4df8-b164-81f3a965377d",
+        "length": 15,
+        "coordinates": "38.10607, -109.57104"
+    },
+    {
+        "id": "d3f77778-ece1-4c2d-9fd2-94dbadf11f6d",
+        "name": "Good Excuse",
+        "area_id": "f168dfb9-3c20-4b91-a4ae-4d76feded74e",
+        "difficulty_id": "442e6bfa-4efd-400d-a521-ba47c5d215c5",
+        "length": 18,
+        "coordinates": "38.08284, -109.56274"
+    },
+    {
+        "id": "7f268b42-993b-466d-bc5f-5344fed6ca83",
+        "name": "Slot Machine",
+        "area_id": "f168dfb9-3c20-4b91-a4ae-4d76feded74e",
+        "difficulty_id": "18a52f82-e248-4140-b025-6492a63caaf0",
+        "length": 42,
+        "coordinates": "38.08284, -109.56274"
+    },
+    {
+        "id": "a5c7d42f-02ef-4c03-8d7d-268cc0bdd83d",
+        "name": "Generic Spark",
+        "area_id": "f168dfb9-3c20-4b91-a4ae-4d76feded74e",
+        "difficulty_id": "62e91844-c1ab-42a2-b21a-c916e8441a7d",
+        "length": 15,
+        "coordinates": "38.04022, -109.59149"
+    },
+    {
+        "id": "a225d74d-b5c5-4685-bb05-4d712408e155",
+        "name": "What A Fool Believes",
+        "area_id": "f168dfb9-3c20-4b91-a4ae-4d76feded74e",
+        "difficulty_id": "5ef24ccc-5a49-41ac-946a-3d7308473f5b",
+        "length": 18,
+        "coordinates": "38.04022, -109.59149"
+    },
+    {
+        "id": "70f8100a-fe84-4c10-a813-13846fe388aa",
+        "name": "Blue Stem Skyway",
+        "area_id": "fbcf79e2-3704-4821-bb06-c37c311d3bd3",
+        "difficulty_id": "8afa422b-de83-4f5e-8df4-56672cb5cb72",
+        "length": 44,
+        "coordinates": "44.58978, -104.71537"
+    },
+    {
+        "id": "9cb01524-2a09-4180-8317-a569917370df",
+        "name": "Durrance",
+        "area_id": "fbcf79e2-3704-4821-bb06-c37c311d3bd3",
+        "difficulty_id": "24cab5c0-0e87-43da-89eb-d56efe5aef8b",
+        "length": 152,
+        "coordinates": "44.58978, -104.71537"
+    },
+    {
+        "id": "0b4bb4c0-4dfa-4e20-831a-65cd342dcd19",
+        "name": "Spiney Norman",
+        "area_id": "fbcf79e2-3704-4821-bb06-c37c311d3bd3",
+        "difficulty_id": "f2641c5c-cc57-4d4c-8159-b444ab57b007",
+        "length": 48,
+        "coordinates": "44.59158, -104.71485"
+    },
+    {
+        "id": "0bef8e14-9039-471c-a1fc-2ac973b9e978",
+        "name": "Friend Of The Devil",
+        "area_id": "fbcf79e2-3704-4821-bb06-c37c311d3bd3",
+        "difficulty_id": "fdc566f7-528c-4306-aaaa-bf5b4e69573e",
+        "length": 52,
+        "coordinates": "44.59158, -104.71485"
+    },
+    {
+        "id": "2727b26a-ffd9-4094-a006-b33a23cc20b5",
+        "name": "Fractal",
+        "area_id": "fbcf79e2-3704-4821-bb06-c37c311d3bd3",
+        "difficulty_id": "c4b0e33e-26a4-4a17-a60a-b241321d0c91",
+        "length": 39,
+        "coordinates": "44.59062, -104.71615"
+    },
+    {
+        "id": "cf0a95db-faad-4e6a-a38e-ddca23110f27",
+        "name": "A Bridge Too Far",
+        "area_id": "fbcf79e2-3704-4821-bb06-c37c311d3bd3",
+        "difficulty_id": "a6b21ee4-a4c0-4c1c-975c-29c00ce58808",
+        "length": 36,
+        "coordinates": "44.59062, -104.71615"
+    }
+]
