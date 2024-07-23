@@ -11,7 +11,23 @@ Area.init(
             defaultValue: UUIDV4,
             primaryKey: true,
             allowNull: false
-        }
+        },
+
+        name: {
+            type: DataTypes.STRING,
+            allowNull: false
+
+        },
+
+        location_id: {
+            type: DataTypes.UUID, 
+            references:{ 
+                model: 'location',
+                key: 'id' 
+
+            }
+
+        },
     },
     {
         sequelize: dbConnect,

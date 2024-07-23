@@ -11,7 +11,25 @@ Difficulty_YDS.init(
             defaultValue: UUIDV4,
             primaryKey: true,
             allowNull: false
+        },
+
+        name: {
+            type: DataTypes.STRING,
+            allowNull: false
+
+        },
+
+        climb_id: {
+            type: DataTypes.UUID, 
+            references:{ 
+                model: 'climb',
+                key: 'id' 
+
+            }
+
         }
+
+
     },
     {
         sequelize: dbConnect,

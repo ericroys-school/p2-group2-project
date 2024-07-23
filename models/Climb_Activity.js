@@ -11,7 +11,41 @@ Climb_Activity.init(
             defaultValue: UUIDV4,
             primaryKey: true,
             allowNull: false
-        }
+        },
+
+        completed_time: {
+            type: DataTypes.INTEGER,
+          
+
+        },
+        
+        completed: {
+            type: DataTypes.BOOLEAN,
+          
+
+        },
+
+
+        climb_id: {
+          type: DataTypes.UUID, 
+            references:{ 
+                model: 'climb',
+                key: 'id' 
+
+            }
+
+        },
+
+        user_id: {
+            type: DataTypes.UUID, 
+            references:{ 
+                model: 'user_c',
+                key:'id' 
+
+            }
+
+        },
+
     },
     {
         sequelize: dbConnect,

@@ -12,7 +12,35 @@ Activity_Comment.init(
             defaultValue: UUIDV4,
             primaryKey: true,
             allowNull: false
+        },
+
+        text: {
+            type: DataTypes.STRING,
+            allowNull: false
+
+        },
+
+        climb_id: {
+            type: DataTypes.UUID, 
+            references:{ 
+                model: 'climb',
+                key: 'id' 
+
+            }
+
+        },
+
+        activity_id: {
+            type: DataTypes.UUID, 
+            references:{ 
+                model: 'climb_activity',
+                key: 'id' 
+
+            }
+
         }
+
+
 
     },
     {

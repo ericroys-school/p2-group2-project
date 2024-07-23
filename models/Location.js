@@ -11,7 +11,16 @@ Location.init(
             defaultValue: UUIDV4,
             primaryKey: true,
             allowNull: false
-        }
+        },
+
+        state: {
+            type: DataTypes.STRING,
+            allowNull: false
+
+        },
+
+        
+
     },
     {
         sequelize: dbConnect,

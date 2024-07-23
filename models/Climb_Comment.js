@@ -11,7 +11,34 @@ Climb_Comment.init(
             defaultValue: UUIDV4,
             primaryKey: true,
             allowNull: false
+        },
+
+        climb_id: {
+            type: DataTypes.UUID, 
+            references:{ 
+                model: 'climb',
+                key: 'id' 
+
+            }
+
+        },
+
+        user_id: {
+            type: DataTypes.UUID, 
+            references:{ 
+                model: 'user_c',
+                key: 'id' 
+
+            }
+
+        },
+
+        text: {
+            type: DataTypes.STRING,
+            allowNull: false
+
         }
+
     },
     {
         sequelize: dbConnect,
