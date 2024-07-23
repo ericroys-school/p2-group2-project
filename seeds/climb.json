@@ -108,52 +108,52 @@
 
     //JOSHUA TREE
     {
-        "id": "",
-        "name": "",
+        "id": "ce7fed7c-2f1c-4d75-92c9-a599d97f764a",
+        "name": "Touch And Go",
         "area_id": "c5b308fe-11d3-4a4d-bce1-273a18cad7b2",
         "difficulty_id": "",
-        "length": ,
-        "coordinates": ""
+        "length": 21,
+        "coordinates": "34.02283, -116.15688"
     },
     {
-        "id": "",
-        "name": "",
+        "id": "2665ff8c-74fd-42e9-94b7-8ec9d0b5f154",
+        "name": "The Cornerstone",
         "area_id": "c5b308fe-11d3-4a4d-bce1-273a18cad7b2",
         "difficulty_id": "",
-        "length": ,
-        "coordinates": ""
+        "length": 24,
+        "coordinates": "34.02283, -116.15688"
     },
     {
-        "id": "",
-        "name": "",
+        "id": "454528a5-31c9-4578-9f60-f13f70adeaa1",
+        "name": "The Prayer",
         "area_id": "c5b308fe-11d3-4a4d-bce1-273a18cad7b2",
         "difficulty_id": "",
-        "length": ,
-        "coordinates": ""
+        "length": 9,
+        "coordinates": "34.10981, -116.13302"
     },
     {
-        "id": "",
-        "name": "",
+        "id": "90305add-d5ef-4611-b874-4633462b0cfe",
+        "name": "Etude No.5",
         "area_id": "c5b308fe-11d3-4a4d-bce1-273a18cad7b2",
         "difficulty_id": "",
-        "length": ,
-        "coordinates": ""
+        "length": 8,
+        "coordinates": "34.10981, -116.13302"
     },
     {
-        "id": "",
-        "name": "",
+        "id": "d69a3bdd-8450-46e3-9e08-8a86f2b085b1",
+        "name": "MetroLink",
         "area_id": "c5b308fe-11d3-4a4d-bce1-273a18cad7b2",
         "difficulty_id": "",
-        "length": ,
-        "coordinates": ""
+        "length": 24,
+        "coordinates": "34.0233, -116.17866"
     },
     {
-        "id": "",
-        "name": "",
+        "id": "708ecf93-cb35-4660-b320-f786d2fc3cef",
+        "name": "Cake Walk",
         "area_id": "c5b308fe-11d3-4a4d-bce1-273a18cad7b2",
         "difficulty_id": "",
-        "length": ,
-        "coordinates": ""
+        "length": 27,
+        "coordinates": "34.0233, -116.17866"
     },
 
 
