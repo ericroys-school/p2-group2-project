@@ -17,13 +17,13 @@ Difficulty_YDS.init(
       allowNull: false,
     },
 
-    climb_id: {
-      type: DataTypes.UUID,
-      references: {
-        model: "climb",
-        key: "id",
-      },
-    },
+    // climb_id: {
+    //   type: DataTypes.UUID,
+    //   references: {
+    //     model: "climb",
+    //     key: "id",
+    //   },
+    // },
   },
   {
     sequelize: dbConnect,
