@@ -147,7 +147,7 @@
         "id": "ac82ec28-c28b-4a73-81c4-b998899888be",
         "name": "Useful Public Service",
         "area_id": "f168dfb9-3c20-4b91-a4ae-4d76feded74e",
-        "difficulty_id": "",
+        "difficulty_id": "a1d505d4-dacc-4826-a94c-9920928e5e75",
         "length": 64,
         "coordinates": "38.10607, -109.57104"
     },
@@ -155,7 +155,7 @@
         "id": "e16b1b97-bf9b-452c-baa8-f401d6677599",
         "name": "Light Duty",
         "area_id": "f168dfb9-3c20-4b91-a4ae-4d76feded74e",
-        "difficulty_id": "",
+        "difficulty_id": "36aac5d9-a199-4e32-aa38-6dc68c583624",
         "length": 15,
         "coordinates": "38.10607, -109.57104"
     },
@@ -163,7 +163,7 @@
         "id": "d3f77778-ece1-4c2d-9fd2-94dbadf11f6d",
         "name": "Good Excuse",
         "area_id": "f168dfb9-3c20-4b91-a4ae-4d76feded74e",
-        "difficulty_id": "",
+        "difficulty_id": "36aac5d9-a199-4e32-aa38-6dc68c583624",
         "length": 18,
         "coordinates": "38.08284, -109.56274"
     },
@@ -171,7 +171,7 @@
         "id": "7f268b42-993b-466d-bc5f-5344fed6ca83",
         "name": "Slot Machine",
         "area_id": "f168dfb9-3c20-4b91-a4ae-4d76feded74e",
-        "difficulty_id": "",
+        "difficulty_id": "37b27a2b-7718-4294-ace6-b78b07463e54",
         "length": 42,
         "coordinates": "38.08284, -109.56274"
     },
@@ -179,7 +179,7 @@
         "id": "a5c7d42f-02ef-4c03-8d7d-268cc0bdd83d",
         "name": "Generic Spark",
         "area_id": "f168dfb9-3c20-4b91-a4ae-4d76feded74e",
-        "difficulty_id": "",
+        "difficulty_id": "36aac5d9-a199-4e32-aa38-6dc68c583624",
         "length": 15,
         "coordinates": "38.04022, -109.59149"
     },
@@ -187,7 +187,7 @@
         "id": "a225d74d-b5c5-4685-bb05-4d712408e155",
         "name": "What A Fool Believes",
         "area_id": "f168dfb9-3c20-4b91-a4ae-4d76feded74e",
-        "difficulty_id": "",
+        "difficulty_id": "70e0992a-ca76-40d7-869c-2caf05377263",
         "length": 18,
         "coordinates": "38.04022, -109.59149"
     },
