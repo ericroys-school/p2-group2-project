@@ -51,7 +51,7 @@
         "id": "ea1c66c9-9fd6-4f36-b3c3-4fa33e62991e",
         "name": "Knotty Tower",
         "area_id": "4e311d9c-584c-4a02-bcc8-5bae60b60115",
-        "difficulty_id": "",
+        "difficulty_id": "36aac5d9-a199-4e32-aa38-6dc68c583624",
         "length": 9,
         "coordinates": "33.28612, -111.07589"
     },
@@ -59,7 +59,7 @@
         "id": "33c4aa80-1da4-4e3b-a140-f624bd175efc",
         "name": "Victorio",
         "area_id": "4e311d9c-584c-4a02-bcc8-5bae60b60115",
-        "difficulty_id": "",
+        "difficulty_id": "c8deeb7f-a5c5-4c31-90c2-372aeca89885",
         "length": 91,
         "coordinates": "33.28612, -111.07589"
     },
@@ -67,7 +67,7 @@
         "id": "51c97c16-4d74-4ce1-8f89-d2bd8d27a9ca",
         "name": "Broken Arrow",
         "area_id": "4e311d9c-584c-4a02-bcc8-5bae60b60115",
-        "difficulty_id": "",
+        "difficulty_id": "477e7d31-0544-4f73-9628-c289e2698d51",
         "length": 45,
         "coordinates": "33.28809, -111.07704"
     },
@@ -75,7 +75,7 @@
         "id": "25129f11-4639-4b5e-ab32-d56a635a0221",
         "name": "Puzzle Pieces",
         "area_id": "4e311d9c-584c-4a02-bcc8-5bae60b60115",
-        "difficulty_id": "",
+        "difficulty_id": "bb5e755f-7e92-4c0d-9c60-bf8c1fdda21a",
         "length": 45,
         "coordinates": "33.28809, -111.07704"
     },
@@ -83,7 +83,7 @@
         "id": "418faa1b-1c67-4b4c-bbe6-032f4601a972",
         "name": "Heaven Can Wait",
         "area_id": "4e311d9c-584c-4a02-bcc8-5bae60b60115",
-        "difficulty_id": "",
+        "difficulty_id": "4f6264bb-6064-46fc-9f1c-8b96dd036236",
         "length": 21,
         "coordinates": "33.2728, -111.0475"
     },
@@ -91,7 +91,7 @@
         "id": "a337ea77-b87a-4e9e-9d09-ceddd0d0fa4f",
         "name": "Eyes Of The World",
         "area_id": "4e311d9c-584c-4a02-bcc8-5bae60b60115",
-        "difficulty_id": "",
+        "difficulty_id": "4f6264bb-6064-46fc-9f1c-8b96dd036236",
         "length": 35,
         "coordinates": "33.27681, -111.02935"
     },
