@@ -1,0 +1,24 @@
+<html>
+    <title>
+        {{#if loggedin}}
+        Welcome {{username}}
+        {{else}}
+        Node.js
+        {{/if}}
+    </title>
+    <link rel="stylesheet" href="https://maxcde">
+
+<div>
+ <h1>Login Form</h1>
+
+    <form action="/login" method="post" >
+        <input placeholder="Name" name="name" type="text">
+        <br>
+        <input placeholder="Password" name="password" type="password">
+        <br>
+        <input class="sub" type="submit">
+     <h3>Dont have a account ?</h3>
+    <a href="/signup">Create a new account</a>
+    </form>
+</div>
+</html>
