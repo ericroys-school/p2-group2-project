@@ -222,7 +222,7 @@
         "difficulty_id": "6fc2cd9e-cfcf-4a86-b9b0-c25ae9328fcb",
         "length": 44,
         "coordinates": "44.58978, -104.71537",
-        "photo": ""
+        "photo": "public/images/Devil's Tower WY/Blue Stem Skyway.svg"
     },
     {
         "id": "9cb01524-2a09-4180-8317-a569917370df",
@@ -231,7 +231,7 @@
         "difficulty_id": "36aac5d9-a199-4e32-aa38-6dc68c583624",
         "length": 152,
         "coordinates": "44.58978, -104.71537",
-        "photo": ""
+        "photo": "public/images/Devil's Tower WY/Durrance.jpg"
     },
     {
         "id": "0b4bb4c0-4dfa-4e20-831a-65cd342dcd19",
@@ -240,7 +240,7 @@
         "difficulty_id": "2c52c363-b5ce-49dd-b4b0-75637eeb26ae",
         "length": 48,
         "coordinates": "44.59158, -104.71485",
-        "photo": ""
+        "photo": "public/images/Devil's Tower WY/Spiney Norman.jpg"
     },
     {
         "id": "0bef8e14-9039-471c-a1fc-2ac973b9e978",
@@ -249,7 +249,7 @@
         "difficulty_id": "c8deeb7f-a5c5-4c31-90c2-372aeca89885",
         "length": 52,
         "coordinates": "44.59158, -104.71485",
-        "photo": ""
+        "photo": "public/images/Devil's Tower WY/Friend Of The Devil.jpg"
     },
     {
         "id": "2727b26a-ffd9-4094-a006-b33a23cc20b5",
@@ -258,7 +258,7 @@
         "difficulty_id": "bb5e755f-7e92-4c0d-9c60-bf8c1fdda21a",
         "length": 39,
         "coordinates": "44.59062, -104.71615",
-        "photo": ""
+        "photo": "public/images/Devil's Tower WY/Fractal.jpg"
     },
     {
         "id": "cf0a95db-faad-4e6a-a38e-ddca23110f27",
@@ -267,6 +267,6 @@
         "difficulty_id": "d7b68b7b-b2e4-4cec-beb8-175ce178e40b",
         "length": 36,
         "coordinates": "44.59062, -104.71615",
-        "photo": ""
+        "photo": "public/images/Devil's Tower WY/A Bridge Too Far.jpg"
     }
 ]
