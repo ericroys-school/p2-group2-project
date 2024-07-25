@@ -1,7 +1,7 @@
 import { Router } from "express";
 import { User } from "../../../models/User.js";
 import { Location } from "../../../models/Location.js";
-import { responseNotFound } from "../../util.js";
+import { responseError, responseNotFound, responseUserError } from "../../util.js";
 export const userRouter = Router();
 
 /**
@@ -32,8 +32,8 @@ userRouter.post("/", async (req, res) => {
   } catch (err) {
     console.error(err);
     err.errors && err.errors.length > 0
-      ? res.status(400).json({ message: err.errors[0].message })
-      : res.status(500).json({ message: err });
+      ? responseUserError(err.errors[0].message)
+      : responseError(err);
   }
 });
 
@@ -45,6 +45,6 @@ userRouter.get("/:id", async (req, res) => {
     let u = await User.findByPk(req.params.id);
     u ? res.status(200).json(u) : responseNotFound(res, req.params.id);
   } catch (err) {
-    res.status(500).json({ message: err });
+    responseError(err);
   }
 });
