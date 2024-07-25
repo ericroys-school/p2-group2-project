@@ -1,18 +1,32 @@
-<div>
-    {{#if logged in}}
-    <h1> Logg out</h1>
-    {{else}}
-    <h1> Log in</h1>
-</div>
 <h1>Sign Up</h1>
 <div>
     <form action="/signup" method="post" >
-        <input placeholder="Name" name="name" type="text">
-        <br>
-        <input placeholder="Password" name="password" type="password">
-        <br>
-        <input class="sub" type="submit">
+        <div class="form-group">
+            <label for="first">First Name</label>
+            <input placeholder="First Name" id="first" type="text">
+        </div>
+        <div class="form-group">
+            <label for="last">Last Name</label>
+            <input placeholder="Last Name" id="last" type="text">
+        </div>
+        <div class="form-group">
+            <label for="pass">Password</label>
+            <input placeholder="Password" id="pass" type="password">
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input placeholder="Email" id="email" type="email" autocomplete="email">
+        </div>
+        <div class="form-group">
+            <label for="location">Location</label>
+            <select class="form-control" id="location">
+                {{#each locations as |location|}}
+                <option>{{state}}</option>
+                {{/each}}
+            </select>
+        </div>
+        <button type="submit" id="submit" class="btn btn-primary">Submit</button>
     </form>
-
-       <a href="/">Go back to login page</a>
+    <a href="/">Go back to login page</a>
 </div>
+<script src="./scripts/signup.js"></script>
