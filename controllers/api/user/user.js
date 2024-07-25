@@ -8,7 +8,7 @@ export const userRouter = Router();
  * Create a new user
  */
 userRouter.post("/", async (req, res) => {
-  if (!req.body) res.status(400).json({ message: "No body provided" });
+  if (!req.body) responseUserError(res, "No body provided");
   let { firstName, lastName, email, password, location } = req.body;
 
   if (location) {
@@ -32,8 +32,8 @@ userRouter.post("/", async (req, res) => {
   } catch (err) {
     console.error(err);
     err.errors && err.errors.length > 0
-      ? responseUserError(err.errors[0].message)
-      : responseError(err);
+      ? responseUserError(res, err.errors[0].message)
+      : responseError(res, err);
   }
 });
 
@@ -45,6 +45,6 @@ userRouter.get("/:id", async (req, res) => {
     let u = await User.findByPk(req.params.id);
     u ? res.status(200).json(u) : responseNotFound(res, req.params.id);
   } catch (err) {
-    responseError(err);
+    responseError(res, err);
   }
 });
