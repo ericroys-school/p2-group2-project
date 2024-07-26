@@ -23,7 +23,7 @@ Climb_Comment.init(
     user_id: {
       type: DataTypes.UUID,
       references: {
-        model: "user_c",
+        model: "user",
         key: "id",
       },
     },

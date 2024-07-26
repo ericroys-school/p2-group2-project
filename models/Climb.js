@@ -15,6 +15,7 @@ Climb.init(
     name: {
       type: DataTypes.STRING,
       allowNull: false,
+      unique: true
     },
 
     area_id: {
@@ -38,6 +39,10 @@ Climb.init(
     coordinates: {
       type: DataTypes.STRING,
       allowNull: false,
+    },
+    photo: {
+      type: DataTypes.STRING,
+      allowNull: true
     },
   },
   {
