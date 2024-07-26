@@ -4,34 +4,34 @@
         "name": "Medicine Wall",
         "location_id": "cd63ec05-7524-499d-9f85-cb3082b18afa",
         "coordinates": "29.60328, -98.55395",
-        "photo": "public/images/Medicine Wall TX/AREA Medicine Wall.jpg"
+        "photo": "images/Medicine Wall TX/AREA Medicine Wall.jpg"
     },
     {
         "id": "4e311d9c-584c-4a02-bcc8-5bae60b60115",
         "name": "Queen Creek Canyon",
         "location_id": "b77da498-2891-4026-b335-5f1dd3fcf1ad",
         "coordinates": "33.3056, -111.07632",
-        "photo": "public/images/Queen's Creek Canyon AZ/AREA Queen Creek Canyon.jpg"
+        "photo": "images/Queen's Creek Canyon AZ/AREA Queen Creek Canyon.jpg"
     },
     {
         "id": "c5b308fe-11d3-4a4d-bce1-273a18cad7b2",
         "name": "Joshua Tree",
         "location_id": "b9d1ebbf-bb66-4767-9864-c7ffbe6a4f2f",
         "coordinates": "34.0122, -116.16795",
-        "photo": "public/images/Joshua Tree CA/AREA Joshua Tree.jpg"
+        "photo": "images/Joshua Tree CA/AREA Joshua Tree.jpg"
     },
     {
         "id": "f168dfb9-3c20-4b91-a4ae-4d76feded74e",
         "name": "Indian Creek",
         "location_id": "f02b0c0a-0093-4ac3-a594-bf127dcace7f",
         "coordinates": "38.02574, -109.53987",
-        "photo": "public/images/Queen's Creek Canyon AZ/AREA Queen Creek Canyon.jpg"
+        "photo": "images/Queen's Creek Canyon AZ/AREA Queen Creek Canyon.jpg"
     },
     {
         "id": "fbcf79e2-3704-4821-bb06-c37c311d3bd3",
         "name": "Devil's Tower",
         "location_id": "1c17901d-0d46-4016-a2a1-5a3763eba99c",
         "coordinates": "44.59048, -104.71507",
-        "photo": "public/images/Devil's Tower WY/AREA Devil's Tower.jpg"
+        "photo": "images/Devil's Tower WY/AREA Devil's Tower.jpg"
     }
 ]
