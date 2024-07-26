@@ -10,3 +10,7 @@ export const responseNotFound = (res, id) => {
 export const responseUserError = (res, err) => {
     res.status(400).json({error: err, message: err})
 }
+
+export const responseUnauthorized = (res) => {
+    res.status(401).json({error: "Unable to validate credentials", message: "Bad credentials or access to resource is forbidden"})
+}
