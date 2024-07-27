@@ -39,10 +39,13 @@ $( function() {
                 console.log('Corresponding Area Data: ', correspondingAreaData);
 
                 if (correspondingAreaData) {
+
+                    var googleMapsUrl = `https://www.google.com/maps?q=${correspondingAreaData.coordinates}`;
+
                     $("#areaInfo").html(
                          `<h1>${correspondingAreaData.name}</h1>
                          <h3>State: ${selectedLocationData.state}</h3>
-                         <p>Coordinates: ${correspondingAreaData.coordinates}</p>
+                         <p>Coordinates: <a href="${googleMapsUrl}" target="_blank">${correspondingAreaData.coordinates}</a></p>
                          <img src="${correspondingAreaData.photo}" alt="${correspondingAreaData.name}" style="max-width: 100%; height: auto;">`
                     );
                 };
