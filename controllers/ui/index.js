@@ -1,6 +1,7 @@
 import { Router } from "express";
 const router = Router();
 import { Location } from "../../models/Location.js";
+import { Area } from "../../models/Area.js";
 
 router.get("/", async (req, res) => {
   res.render("landingPage");
@@ -23,7 +24,19 @@ router.get("/signup", async (req, res) => {
     }
 });
 router.get("/area", async (req, res) => {
-  res.render("area");
+  let areas;
+  try{
+    let a = await Area.findAll(
+      { include: Location , 
+      order: ['name']
+      }
+    )
+    areas = a? a.map(i => i.get({plain: true})) : [];
+    res.render('area', {areas})
+  }catch(err){
+    console.error(err)
+    res.render("error", {error: err})
+  }
 });
 router.get("/profile", async (req, res) => {
   res.render("profile");
