@@ -14,11 +14,6 @@ $( function() {
                 return map;
             }, {});
 
-            const areaDataMap = areaData.reduce((map, item) => {
-                map[item.location_id] = item;
-                return map;
-            }, {});
-
             locationData.forEach(item => {
                 $("#selectState").append(
                     new Option(item.state, item.id)
@@ -28,32 +23,59 @@ $( function() {
         $("#selectState").selectmenu("refresh");
 
             $("#selectState").on("selectmenuchange", function() {
-                var selectedId = $(this).val();
-                console.log("Selected Location ID: ", selectedId);
+                var selectedStateId = $(this).val();
+                console.log("Selected State ID: ", selectedStateId);
 
-                var selectedLocationData = locationDataMap[selectedId];
-                console.log('Selected Location Data: ', selectedLocationData);
-                
-                if (selectedLocationData) {
-                var correspondingAreaData = areaDataMap[selectedLocationData.id];
-                console.log('Corresponding Area Data: ', correspondingAreaData);
+                var areasForState =areaData.filter(item => item.location_id === selectedStateId);
 
-                if (correspondingAreaData) {
+                $("#areaList").empty();
+                if (areasForState.length > 0) {
+                    areasForState.forEach(item => {
+                        var areaLink = $('<a>')
+                            .text(item.name)
+                            .attr('href', '#')
+                            .data('areaId', item.id);
 
-                    var googleMapsUrl = `https://www.google.com/maps?q=${correspondingAreaData.coordinates}`;
-
-                    $("#areaInfo").html(
-                         `<h1>${correspondingAreaData.name}</h1>
-                         <h3>State: ${selectedLocationData.state}</h3>
-                         <p>Coordinates: <a href="${googleMapsUrl}" target="_blank">${correspondingAreaData.coordinates}</a></p>
-                         <img src="${correspondingAreaData.photo}" alt="${correspondingAreaData.name}" style="max-width: 100%; height: auto;">`
-                    );
+                        $("#areaList").append($('<div>').append(areaLink));
+                    });
+                    $("#areaInfo").empty();
                 };
-        }});
-        }) .catch(error => {
-            console.error("error fetching json:", error);
-            $("#areaInfo").html("error loading data");
-        });
-});
+
+                $("#areaList").on("click", "a", function(event) {
+                    event.preventDefault();
+
+                    var selectedAreaId = $(this).data('areaId');
+                    console.log("Selected Area ID: ", selectedAreaId);
+
+                    var selectedAreaData = areaData.find(item => item.id === selectedAreaId);
+                    console.log('Selected Area Data: ', selectedAreaData);
+
+                    if (selectedAreaData) {
+
+                        var googleMapsUrl = `https://www.google.com/maps?q=${selectedAreaData.coordinates}`;
+    
+                        $("#areaInfo").html(
+                             `<h1>${selectedAreaData.name}</h1>
+                             <h3>State: ${locationDataMap[selectedAreaData.location_id].state}</h3>
+                             <p>Coordinates: <a href="${googleMapsUrl}" target="_blank">${selectedAreaData.coordinates}</a></p>
+                             <img src="${selectedAreaData.photo}" alt="${selectedAreaData.name}" style="max-width: 100%; height: auto;">`
+                        );
+                    };
+            })});
+            }) .catch(error => {
+                console.error("error fetching json:", error);
+                $("#areaInfo").html("error loading data");
+            });
+                })
+
+                // var selectedLocationData = locationDataMap[selectedId];
+                // console.log('Selected Location Data: ', selectedLocationData);
+                
+                // if (selectedLocationData) {
+                // var correspondingAreaData = areaDataMap[selectedLocationData.id];
+                // console.log('Corresponding Area Data: ', correspondingAreaData);
+
+
+
 
 
