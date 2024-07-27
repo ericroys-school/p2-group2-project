@@ -4,10 +4,12 @@ $( function() {
     
         Promise.all([
             fetch('../seeds/area.json').then(response => response.json()),
-            fetch('../seeds/location.json').then(response => response.json())
-        ]) .then(([areaData, locationData]) => {
+            fetch('../seeds/location.json').then(response => response.json()),
+            fetch('../seeds/climb.json').then(response => response.json())
+        ]) .then(([areaData, locationData, climbData]) => {
             console.log('Area Data: ', areaData);
             console.log('Location Data: ', locationData);
+            console.log('Climb Data: ', climbData);
 
             const locationDataMap = locationData.reduce((map, item) => {
                 map[item.id] = item;
@@ -61,7 +63,8 @@ $( function() {
                              `<h1>${selectedAreaData.name}</h1>
                              <h3>State: ${locationDataMap[selectedAreaData.location_id].state}</h3>
                              <p>Coordinates: <a href="${googleMapsUrl}" target="_blank">${selectedAreaData.coordinates}</a></p>
-                             <img src="${selectedAreaData.photo}" alt="${selectedAreaData.name}" style="max-width: 100%; height: auto;">`
+                             <img src="${selectedAreaData.photo}" alt="${selectedAreaData.name}" style="max-width: 100%; height: auto;">
+                             <h2>Climbs In The Area:</h2>`
                         );
                     };
             })});
