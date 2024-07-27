@@ -5,20 +5,34 @@ $( function() {
     fetch('../seeds/area.json')
         .then(response => response.json())
         .then(jsonData => {
-            $("#selectState").on("selectmenuchange", function() {
-                var selectedValue = $(this).val();
+            console.log('JSON data:', jsonData);
 
-                var selectedData = jsonData[selectedValue];
+        jsonData.forEach(item => {
+            $("#selectState").append(
+                new Option(item.name, item.id)
+            );
+        });
+
+        $("#selectState").selectmenu("refresh");
+
+            $("#selectState").on("selectmenuchange", function() {
+                var selectedId = $(this).val();
+                console.log("Selected ID: ", selectedId);
+
+                var selectedData = jsonData.find(item => item.id === selectedId);
+                console.log('Selected Data: ', selectedData);
 
                 if (selectedData) {
                     $("#areaInfo").html(
-                        `<h3>${selectedValue}</h3>
-                         <h2>${selectedData.name}</h2>
-                         <p>${selectedData.coordinates}</p>
-                         <img>${selectedData.photo}</img`
+                         `<h2>${selectedData.name}</h2>
+                         <p>Coordinates: ${selectedData.coordinates}</p>
+                         <img src="${selectedData.photo}" alt="${selectedData.name}" style="max-width: 100%; height: auto;">`
                     );
                 };
             });
+        }) .catch(error => {
+            console.error("error fetching json:", error);
+            $("#areaInfo").html("error loading data");
         });
 });
 
