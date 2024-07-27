@@ -29,6 +29,9 @@ $( function() {
                 var areasForState =areaData.filter(item => item.location_id === selectedStateId);
 
                 $("#areaList").empty();
+
+                $("#areaList").append(`<h2>Area List:</h2>`);
+
                 if (areasForState.length > 0) {
                     areasForState.forEach(item => {
                         var areaLink = $('<a>')
