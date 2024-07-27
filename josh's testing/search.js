@@ -1,21 +1,25 @@
 //creates drop down menu
 $( function() {
     $( "#selectState" ).selectmenu();
-  
-//grabs selected option's value
-$("#selectState").on("selectmenuchange", function() {
-    var selectedValue = $(this).val();
+    
+    fetch('../seeds/area.json')
+        .then(response => response.json())
+        .then(jsonData => {
+            $("#selectState").on("selectmenuchange", function() {
+                var selectedValue = $(this).val();
 
-if (selectedValue === "Arizona") {
-    alert("Hey, this is Arizona");
-} else if (selectedValue === "California") {
-    alert("Hey, this is California");
-} else if (selectedValue === "Texas") {
-    alert("Hey, this is Texas");
-} else if (selectedValue === "Utah") {
-    alert("Hey, this is Utah");
-} else if (selectedValue === "Wyoming") {
-    alert("Hey, this is Wyoming");
-};
+                var selectedData = jsonData[selectedValue];
+
+                if (selectedData) {
+                    $("#areaInfo").html(
+                        `<h3>${selectedValue}</h3>
+                         <h2>${selectedData.name}</h2>
+                         <p>${selectedData.coordinates}</p>
+                         <img>${selectedData.photo}</img`
+                    );
+                };
+            });
+        });
 });
-});
+
+
