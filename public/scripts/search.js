@@ -72,14 +72,7 @@ $( function() {
                 console.error("error fetching json:", error);
                 $("#areaInfo").html("error loading data");
             });
-                })
-
-                // var selectedLocationData = locationDataMap[selectedId];
-                // console.log('Selected Location Data: ', selectedLocationData);
-                
-                // if (selectedLocationData) {
-                // var correspondingAreaData = areaDataMap[selectedLocationData.id];
-                // console.log('Corresponding Area Data: ', correspondingAreaData);
+                });
 
 
 
