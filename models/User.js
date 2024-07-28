@@ -1,6 +1,7 @@
 import { Model, DataTypes, UUIDV4 } from "sequelize";
 import { dbConnect } from "../config/connection.js";
 import bcrypt from "bcrypt";
+import { Location } from "./Location.js";
 
 export class User extends Model {
   isValidPassword(password) {
@@ -47,8 +48,9 @@ User.init(
 
     location_id: {
       type: DataTypes.UUID,
+      allowNull: true,
       references: {
-        model: "location",
+        model: Location,
         key: "id",
       },
     },

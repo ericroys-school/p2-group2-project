@@ -1,5 +1,6 @@
 import { Model, DataTypes, UUIDV4 } from "sequelize";
 import { dbConnect } from "../config/connection.js";
+import { Area } from "./Area.js";
 
 export class Climb extends Model {}
 
@@ -15,12 +16,13 @@ Climb.init(
     name: {
       type: DataTypes.STRING,
       allowNull: false,
+      unique: true
     },
 
     area_id: {
       type: DataTypes.UUID,
       references: {
-        model: "area",
+        model: Area,
         key: "id",
       },
     },
@@ -38,6 +40,10 @@ Climb.init(
     coordinates: {
       type: DataTypes.STRING,
       allowNull: false,
+    },
+    photo: {
+      type: DataTypes.STRING,
+      allowNull: true
     },
   },
   {
