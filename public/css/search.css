@@ -8,9 +8,3 @@ fieldset {
   .overflow {
     height: 200px;
   }
-
-  /* not sure if needed, but wanted to create space for test info */
-  #areaInfo {
-    height: 80vh;
-    width: 80vw;
-  }
