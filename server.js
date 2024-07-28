@@ -4,6 +4,7 @@ import { dbConnect } from "./config/connection.js";
 import { create } from "express-handlebars";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { sequelize_sux } from "./models/index.js";
 
 const app = express();
 const PORT = process.env.PORT || 3001;
