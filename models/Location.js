@@ -15,6 +15,7 @@ Location.init(
     state: {
       type: DataTypes.STRING,
       allowNull: false,
+      unique: true
     },
   },
   {

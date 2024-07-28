@@ -29,7 +29,7 @@ Area.init(
     location_id: {
       type: DataTypes.UUID,
       references: {
-        model: "location",
+        model: Location,
         key: "id",
       },
     },
