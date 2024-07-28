@@ -7,6 +7,13 @@
         "photo": "images/Medicine Wall TX/AREA Medicine Wall.jpg"
     },
     {
+        "id": "58043523-e84a-45a6-ace7-44b8cef94b68",
+        "name": "Reimer's Ranch",
+        "location_id": "cd63ec05-7524-499d-9f85-cb3082b18afa",
+        "coordinates": "30.33369, -98.12219",
+        "photo": "images/Reimer's Ranch TX/AREA Reimer's Ranch.jpg"
+    },
+    {
         "id": "4e311d9c-584c-4a02-bcc8-5bae60b60115",
         "name": "Queen Creek Canyon",
         "location_id": "b77da498-2891-4026-b335-5f1dd3fcf1ad",
@@ -25,7 +32,7 @@
         "name": "Indian Creek",
         "location_id": "f02b0c0a-0093-4ac3-a594-bf127dcace7f",
         "coordinates": "38.02574, -109.53987",
-        "photo": "images/Queen's Creek Canyon AZ/AREA Queen Creek Canyon.jpg"
+        "photo": "images/Indian Creek UT/AREA Indian Creek.jpg"
     },
     {
         "id": "fbcf79e2-3704-4821-bb06-c37c311d3bd3",

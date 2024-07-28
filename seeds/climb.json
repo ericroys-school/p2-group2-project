@@ -222,7 +222,7 @@
         "difficulty_id": "6fc2cd9e-cfcf-4a86-b9b0-c25ae9328fcb",
         "length": 44,
         "coordinates": "44.58978, -104.71537",
-        "photo": "images/Devil's Tower WY/Blue Stem Skyway.svg"
+        "photo": "images/Devil's Tower WY/Blue Stem Skyway.jpg"
     },
     {
         "id": "9cb01524-2a09-4180-8317-a569917370df",
@@ -268,5 +268,59 @@
         "length": 36,
         "coordinates": "44.59062, -104.71615",
         "photo": "images/Devil's Tower WY/A Bridge Too Far.jpg"
+    },
+    {
+        "id": "487d5a70-6ed4-4f6e-b496-078b5d0f9643",
+        "name": "Arbortrary",
+        "area_id": "58043523-e84a-45a6-ace7-44b8cef94b68",
+        "difficulty_id": "36aac5d9-a199-4e32-aa38-6dc68c583624",
+        "length": 8,
+        "coordinates": "30.3645, -98.1264",
+        "photo": "images/Reimer's Ranch TX/Arbortrary.jpg"
+    },
+    {
+        "id": "2a21af8f-c3a5-4824-85a9-c4f49f62210d",
+        "name": "Kindling",
+        "area_id": "58043523-e84a-45a6-ace7-44b8cef94b68",
+        "difficulty_id": "477e7d31-0544-4f73-9628-c289e2698d51",
+        "length": 8,
+        "coordinates": "30.3645, -98.1264",
+        "photo": "images/Reimer's Ranch TX/Kindling.jpg"
+    },
+    {
+        "id": "41c24779-b082-43a4-8ac7-b34d01c404ea",
+        "name": "Ten Foot Pole",
+        "area_id": "58043523-e84a-45a6-ace7-44b8cef94b68",
+        "difficulty_id": "2c52c363-b5ce-49dd-b4b0-75637eeb26ae",
+        "length": 8,
+        "coordinates": "30.3664, -98.1287",
+        "photo": "images/Reimer's Ranch TX/Ten Foot Pole.jpg"
+    },
+    {
+        "id": "44cdfb27-147d-4cb9-9490-9c6958413f8d",
+        "name": "Jade",
+        "area_id": "58043523-e84a-45a6-ace7-44b8cef94b68",
+        "difficulty_id": "323b0af6-b9ca-4e61-80d5-789a22986358",
+        "length": 12,
+        "coordinates": "30.36155, -98.12531",
+        "photo": "images/Reimer's Ranch TX/Jade.jpg"
+    },
+    {
+        "id": "9ba29b84-15b4-46a7-aaaf-070ae7aef293",
+        "name": "Rain Dance",
+        "area_id": "58043523-e84a-45a6-ace7-44b8cef94b68",
+        "difficulty_id": "323b0af6-b9ca-4e61-80d5-789a22986358",
+        "length": 12,
+        "coordinates": "30.36155, -98.12531",
+        "photo": "images/Reimer's Ranch TX/Rain Dance.jpg"
+    },
+    {
+        "id": "c4a41fcb-3732-4e63-bb4c-a7c0a8968372",
+        "name": "Clambering Kimberly",
+        "area_id": "58043523-e84a-45a6-ace7-44b8cef94b68",
+        "difficulty_id": "7881c372-020e-4974-8eaa-edc70115c122",
+        "length": 8,
+        "coordinates": "30.363, -98.125",
+        "photo": "images/Reimer's Ranch TX/Clambering Kimberly.jpg"
     }
 ]
