@@ -38,12 +38,6 @@ $( function() {
                 );
             });
 
-            // areaData.forEach(item => {
-            //     $("#selectState").append(
-            //         new Option(item.state, item.id)
-            //     );
-            // });
-
         $("#selectState").selectmenu("refresh");
 
             $("#selectState").on("selectmenuchange", function() {
@@ -115,23 +109,23 @@ $( function() {
             var selectedClimbId = $(this).data('climbid');
             console.log("Selected Climb ID: ", selectedClimbId);
 
-            var selectedClimbData = areaData.climbs.find(climb => climb.id === selectedClimbId);
+            var selectedClimbData = areaData.flatMap(area => area.climbs || []).find(climb => climb.id === selectedClimbId);
             console.log("Selected Climb Data: ", selectedClimbData);
 
             if (selectedClimbData) {
                 var googleMapsUrl = `https://www.google.com/maps?q=${selectedClimbData.coordinates}`;
 
-                const climbComment = commentMap[selectedClimbId] || 'No comments available';
+                // const climbComment = commentMap[selectedClimbId] || 'No comments available';
 
                 $("#climbInfo").html(
                     `<h1>${selectedClimbData.name}</h1>
-                    <h3>Grade: ${difficultyMap[selectedClimbData.difficulty_id]}</h3>
+                    <h3>Grade: </h3>
                     <p>Length: ${selectedClimbData.length} meters</p>
                     <p>Coordinates: <a href="${googleMapsUrl}" target="_blank">${selectedClimbData.coordinates}</a></p>
-                    <button id="toDoButton">Add To List</button><button id="completeButton">Add To Completed</button><br>
+                    <button id="toDoButton">Add To List</button><br>
                     <img src="${selectedClimbData.photo}" alt="${selectedClimbData.name} style="max-width: 100%; height: auto;">
                     <p>Comments:</p>
-                    <p>${climbComment}</p>
+                    <p></p>
                     <button id="addCommentButton">Add A Comment</button>`
                 );
             }
@@ -141,6 +135,9 @@ $( function() {
         $("#areaInfo").html("error loading data");
     });
 });
+
+// ${difficultyMap[selectedClimbData.difficulty_id]}
+// ${climbComment}
 
 
 
