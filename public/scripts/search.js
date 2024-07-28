@@ -38,6 +38,9 @@ $( function() {
                 var areasForState =areaData.filter(item => item.location_id === selectedStateId);
 
                 $("#areaList").empty();
+                $("#areaInfo").empty();
+                $("#climbList").empty();
+                $("#climbInfo").empty();
 
                 $("#areaList").append(`<h2>Area List:</h2>`);
 
@@ -53,8 +56,10 @@ $( function() {
                     $("#areaInfo").empty();
                 };
 
-                $("#areaList").on("click", "a", function(event) {
+                $("#areaList").on("click", "a", function(event) {                    
                     event.preventDefault();
+                    
+                    $("#climbInfo").empty();
 
                     var selectedAreaId = $(this).data('areaId');
                     console.log("Selected Area ID: ", selectedAreaId);
