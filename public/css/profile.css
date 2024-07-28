@@ -1,0 +1,39 @@
+#profilePic{
+    width: 200px;           /* Width of the box */
+    height: 150px;          /* Height of the box */
+    border: 2px solid black; /* Border around the box */
+    padding: 20px;          /* Padding inside the box (optional) */
+    margin: 20px;           /* Margin around the box (optional) */
+}
+
+#basicInfo{
+    width: 200px;           /* Width of the box */
+    height: 150px;          /* Height of the box */
+    border: 2px solid black; /* Border around the box */
+    padding: 20px;          /* Padding inside the box (optional) */
+    margin: 20px;           /* Margin around the box (optional) */
+}
+
+#to-doList{
+    width: 200px;           /* Width of the box */
+    height: 150px;          /* Height of the box */
+    border: 2px solid black; /* Border around the box */
+    padding: 20px;          /* Padding inside the box (optional) */
+    margin: 20px;           /* Margin around the box (optional) */
+}
+
+#completedList{
+    width: 200px;           /* Width of the box */
+    height: 150px;          /* Height of the box */
+    border: 2px solid black; /* Border around the box */
+    padding: 20px;          /* Padding inside the box (optional) */
+    margin: 20px;           /* Margin around the box (optional) */
+}
+
+#statBarGraph{
+    width: 200px;           /* Width of the box */
+    height: 150px;          /* Height of the box */
+    border: 2px solid black; /* Border around the box */
+    padding: 20px;          /* Padding inside the box (optional) */
+    margin: 20px;           /* Margin around the box (optional) */
+}

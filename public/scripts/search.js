@@ -120,9 +120,11 @@ $( function() {
                     <h3>Grade: ${difficultyMap[selectedClimbData.difficulty_id]}</h3>
                     <p>Length: ${selectedClimbData.length} meters</p>
                     <p>Coordinates: <a href="${googleMapsUrl}" target="_blank">${selectedClimbData.coordinates}</a></p>
+                    <button id="toDoButton">Add To List</button><button id="completeButton">Add To Completed</button><br>
                     <img src="${selectedClimbData.photo}" alt="${selectedClimbData.name} style="max-width: 100%; height: auto;">
                     <p>Comments:</p>
-                    <p>${climbComment}</p>`
+                    <p>${climbComment}</p>
+                    <button id="addCommentButton">Add A Comment</button>`
                 );
             }
         });
