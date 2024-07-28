@@ -28,7 +28,7 @@ const useractcomm = User.hasMany(Activity_Comment, { foreignKey: "user_id" });
 const commactuser = Activity_Comment.belongsTo(User, { foreignKey: "user_id" });
 const userclimbcomm = User.hasMany(Climb_Comment, { foreignKey: "user_id" });
 const climbcommuser = Climb_Comment.belongsTo(User, { foreignKey: "user_id" });
-
+const sequelize_sux = true;
 export {
   User,
   Activity_Comment,
@@ -54,4 +54,5 @@ export {
   commactuser,
   userclimbcomm,
   climbcommuser,
+  sequelize_sux
 };

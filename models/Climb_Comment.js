@@ -1,5 +1,6 @@
 import { Model, DataTypes, UUIDV4 } from "sequelize";
 import { dbConnect } from "../config/connection.js";
+import { Climb } from "./Climb.js";
 
 export class Climb_Comment extends Model {}
 
@@ -15,7 +16,7 @@ Climb_Comment.init(
     climb_id: {
       type: DataTypes.UUID,
       references: {
-        model: "climb",
+        model: Climb,
         key: "id",
       },
     },
