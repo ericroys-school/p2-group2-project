@@ -6,12 +6,14 @@ $( function() {
             fetch('../seeds/area.json').then(response => response.json()),
             fetch('../seeds/location.json').then(response => response.json()),
             fetch('../seeds/climb.json').then(response => response.json()),
-            fetch('../seeds/difficulty_yds.json').then(response => response.json())
-        ]) .then(([areaData, locationData, climbData, difficultyData]) => {
+            fetch('../seeds/difficulty_yds.json').then(response => response.json()),
+            fetch('../seeds/climb_comment.json').then(response => response.json())
+        ]) .then(([areaData, locationData, climbData, difficultyData, commentData]) => {
             console.log('Area Data: ', areaData);
             console.log('Location Data: ', locationData);
             console.log('Climb Data: ', climbData);
             console.log('Difficulty Data ', difficultyData);
+            console.log('Comment Data: ', commentData);
 
             const locationDataMap = locationData.reduce((map, item) => {
                 map[item.id] = item;
@@ -20,6 +22,13 @@ $( function() {
 
             const difficultyMap = difficultyData.reduce((map, item) => {
                 map[item.id] = item.name;
+                return map;
+            }, {});
+
+            const commentMap = commentData.reduce((map, item) => {
+                if (item.climb_id && item.text) {
+                    map[item.climb_id] = item.text;
+                }  
                 return map;
             }, {});
 
@@ -58,7 +67,7 @@ $( function() {
 
                 $("#areaList").on("click", "a", function(event) {                    
                     event.preventDefault();
-                    
+
                     $("#climbInfo").empty();
 
                     var selectedAreaId = $(this).data('areaId');
@@ -104,12 +113,16 @@ $( function() {
             if (selectedClimbData) {
                 var googleMapsUrl = `https://www.google.com/maps?q=${selectedClimbData.coordinates}`;
 
+                const climbComment = commentMap[selectedClimbId] || 'No comment available';
+
                 $("#climbInfo").html(
                     `<h1>${selectedClimbData.name}</h1>
                     <h3>Grade: ${difficultyMap[selectedClimbData.difficulty_id]}</h3>
                     <p>Length: ${selectedClimbData.length} meters</p>
                     <p>Coordinates: <a href="${googleMapsUrl}" target="_blank">${selectedClimbData.coordinates}</a></p>
-                    <img src="${selectedClimbData.photo}" alt="${selectedClimbData.name} style="max-width: 100%; height: auto;">`
+                    <img src="${selectedClimbData.photo}" alt="${selectedClimbData.name} style="max-width: 100%; height: auto;">
+                    <p>Comments:</p>
+                    <p>${climbComment}</p>`
                 );
             }
         });
