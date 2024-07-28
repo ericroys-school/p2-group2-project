@@ -3,11 +3,11 @@ $( function() {
     $( "#selectState" ).selectmenu();
     
         Promise.all([
-            fetch('../seeds/area.json').then(response => response.json()),
-            fetch('../seeds/location.json').then(response => response.json()),
-            fetch('../seeds/climb.json').then(response => response.json()),
-            fetch('../seeds/difficulty_yds.json').then(response => response.json()),
-            fetch('../seeds/climb_comment.json').then(response => response.json())
+            fetch('/api/area').then(response => response.json()),
+            fetch('/api/location').then(response => response.json())
+            // fetch('/api/climb').then(response => response.json()),
+            // fetch('/api/difficulty_yds').then(response => response.json()),
+            // fetch('/api/climb_comment').then(response => response.json())
         ]) .then(([areaData, locationData, climbData, difficultyData, commentData]) => {
             console.log('Area Data: ', areaData);
             console.log('Location Data: ', locationData);
@@ -20,23 +20,29 @@ $( function() {
                 return map;
             }, {});
 
-            const difficultyMap = difficultyData.reduce((map, item) => {
-                map[item.id] = item.name;
-                return map;
-            }, {});
+            // const difficultyMap = difficultyData.reduce((map, item) => {
+            //     map[item.id] = item.name;
+            //     return map;
+            // }, {});
 
-            const commentMap = commentData.reduce((map, item) => {
-                if (item.climb_id && item.text) {
-                    map[item.climb_id] = item.text;
-                }  
-                return map;
-            }, {});
+            // const commentMap = commentData.reduce((map, item) => {
+            //     if (item.climb_id && item.text) {
+            //         map[item.climb_id] = item.text;
+            //     }  
+            //     return map;
+            // }, {});
 
             locationData.forEach(item => {
                 $("#selectState").append(
                     new Option(item.state, item.id)
                 );
             });
+
+            // areaData.forEach(item => {
+            //     $("#selectState").append(
+            //         new Option(item.state, item.id)
+            //     );
+            // });
 
         $("#selectState").selectmenu("refresh");
 
@@ -80,7 +86,9 @@ $( function() {
 
                         var googleMapsUrl = `https://www.google.com/maps?q=${selectedAreaData.coordinates}`;
 
-                        var climbsForArea = climbData.filter(climb => climb.area_id === selectedAreaId);
+                        console.log(selectedAreaData.climbs);
+
+                        var climbsForArea = selectedAreaData.climbs.filter(climb => climb.area_id === selectedAreaId);
 
                         var climbsHtml = climbsForArea.length > 0 ? '<h2>Climbs In This Area:</h2>' : '';
                         climbsForArea.forEach(climb => {
@@ -107,7 +115,7 @@ $( function() {
             var selectedClimbId = $(this).data('climbid');
             console.log("Selected Climb ID: ", selectedClimbId);
 
-            var selectedClimbData = climbData.find(climb => climb.id === selectedClimbId);
+            var selectedClimbData = areaData.climbs.find(climb => climb.id === selectedClimbId);
             console.log("Selected Climb Data: ", selectedClimbData);
 
             if (selectedClimbData) {
