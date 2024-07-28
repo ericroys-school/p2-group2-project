@@ -23,7 +23,7 @@ userRouter.post("/", async (req, res) => {
     });
     location = s ? s.get({ plain: true }).id : "null";
   }
-
+  console.log(location)
   try {
     const u = await User.create({
       first_name: firstName,
