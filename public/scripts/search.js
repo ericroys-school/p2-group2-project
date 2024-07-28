@@ -113,7 +113,7 @@ $( function() {
             if (selectedClimbData) {
                 var googleMapsUrl = `https://www.google.com/maps?q=${selectedClimbData.coordinates}`;
 
-                const climbComment = commentMap[selectedClimbId] || 'No comment available';
+                const climbComment = commentMap[selectedClimbId] || 'No comments available';
 
                 $("#climbInfo").html(
                     `<h1>${selectedClimbData.name}</h1>
@@ -131,8 +131,6 @@ $( function() {
         $("#areaInfo").html("error loading data");
     });
 });
-
-
 
 
 
