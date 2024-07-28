@@ -5,6 +5,7 @@ import { Location } from "../models/Location.js";
 import { readFile } from "node:fs/promises";
 import { dirname } from "path";
 import { fileURLToPath } from "url";
+import { Climb, Climb_Comment } from "../models/index.js";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
@@ -18,3 +19,5 @@ Difficulty_YDS.bulkCreate(
   JSON.parse(await readFile(__dirname + "/difficulty_yds.json"))
 );
 Area.bulkCreate(JSON.parse(await readFile(__dirname + "/area.json")));
+Climb.bulkCreate(JSON.parse(await readFile(__dirname + "/climb.json")));
+Climb_Comment.bulkCreate(JSON.parse(await readFile(__dirname + "/climb_comment.json")));
