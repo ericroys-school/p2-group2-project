@@ -1,24 +1,27 @@
-<html>
-    <title>
-        {{#if loggedin}}
-        Welcome {{username}}
-        {{else}}
-        Node.js
-        {{/if}}
-    </title>
-    <link rel="stylesheet" href="https://maxcde">
 
-<div>
- <h1>Login Form</h1>
-
-    <form action="/login" method="post" >
-        <input placeholder="Name" name="name" type="text">
-        <br>
-        <input placeholder="Password" name="password" type="password">
-        <br>
-        <input class="sub" type="submit">
-     <h3>Dont have a account ?</h3>
-    <a href="/signup">Create a new account</a>
-    </form>
-</div>
-</html>
+    
+ <div id="container">
+      <div class="form-wrap">
+        <h1>Log In</h1>
+        <p>Thank you for choosing our website</p>
+        <form>
+          <div class="form-group">
+            <label for="first-name"> User Name</label>
+            <input type="text" name="firstName" id="first-name" />
+          </div>
+          <div class="form-group">
+            <label for="password2">Confirm Password</label>
+            <input type="password" name="pasword2" id="password2" />
+          </div>
+          <button type="submit" class="btn">Log In</button>
+          <p class="bottom-text">
+            By clicking the Sign Up button, you agree to our
+            <a href="#">Terms & Conditions</a> and
+            <a href="#">Privacy Policy</a>
+          </p>
+        </form>
+      </div>
+      <footer>
+        <p>If you forgot your user Name orPasword? <a href="#">Click Here</a></p>
+      </footer>
+    </div>
