@@ -20,9 +20,30 @@
     background-color: aliceblue; /* Background color for visibility */
     color: black;            /* Text color */
     display: flex;           /* Center text inside the box */
-    justify-content: center; /* Horizontally center text */
-    align-items: center;     /* Vertically center text */
+    flex-direction: column;
     border-radius: 5px;      /* Rounded corners (optional) */
+    box-sizing: border-box;
+}
+
+#pbHeader {
+    height: 15%;               /* Top box takes 10% of the height */
+    background-color: darkred; /* Background color for visibility */
+    color: white;              /* Text color */
+    display: flex;             /* Center text inside the box */
+    justify-content: center;   /* Horizontally center text */
+    align-items: center;       /* Vertically center text */
+    border-radius: 5px 5px 0px 0px;        /* Rounded corners (optional) */
+    border-bottom: 2px solid black;
+}
+
+#pbBody {
+    height: 85%;               /* Bottom box takes 90% of the height */
+    background-color: aliceblue; /* Background color for visibility */
+    color: white;              /* Text color */
+    display: flex;             /* Center text inside the box */
+    justify-content: center;   /* Horizontally center text */
+    align-items: center;       /* Vertically center text */
+    border-radius: 5px;        /* Rounded corners (optional) */
 }
 
 #toDoList {
@@ -31,9 +52,94 @@
     background-color: aliceblue; /* Background color for visibility */
     color: black;            /* Text color */
     display: flex;           /* Center text inside the box */
-    justify-content: center; /* Horizontally center text */
-    align-items: center;     /* Vertically center text */
+    flex-direction: column;
     border-radius: 5px;      /* Rounded corners (optional) */
+    box-sizing: border-box;
+}
+
+#toDoHeader {
+    height: 15%;               /* Top box takes 10% of the height */
+    background-color: #007bff; /* Background color for visibility */
+    color: white;              /* Text color */
+    display: flex;             /* Center text inside the box */
+    justify-content: center;   /* Horizontally center text */
+    align-items: center;       /* Vertically center text */
+    border-radius: 5px 5px 0px 0px;        /* Rounded corners (optional) */
+    border-bottom: 2px solid black;
+}
+
+#toDoBody {
+    height: 85%;               /* Bottom box takes 90% of the height */
+    background-color: aliceblue; /* Background color for visibility */
+    color: white;              /* Text color */
+    display: flex;             /* Center text inside the box */
+    justify-content: center;   /* Horizontally center text */
+    align-items: center;       /* Vertically center text */
+    border-radius: 5px;        /* Rounded corners (optional) */
+}
+
+#completeList {
+    width: 40%;            /* Fixed width of the boxes */
+    height: 100%;           /* Fixed height of the boxes */
+    background-color: aliceblue; /* Background color for visibility */
+    color: black;            /* Text color */
+    display: flex;           /* Center text inside the box */
+    flex-direction: column;
+    border-radius: 5px;      /* Rounded corners (optional) */
+    box-sizing: border-box;
+}
+
+#completeHeader {
+    height: 15%;               /* Top box takes 10% of the height */
+    background-color: orange; /* Background color for visibility */
+    color: white;              /* Text color */
+    display: flex;             /* Center text inside the box */
+    justify-content: center;   /* Horizontally center text */
+    align-items: center;       /* Vertically center text */
+    border-radius: 5px 5px 0px 0px;        /* Rounded corners (optional) */
+    border-bottom: 2px solid black;
+}
+
+#completeBody {
+    height: 85%;               /* Bottom box takes 90% of the height */
+    background-color: aliceblue; /* Background color for visibility */
+    color: white;              /* Text color */
+    display: flex;             /* Center text inside the box */
+    justify-content: center;   /* Horizontally center text */
+    align-items: center;       /* Vertically center text */
+    border-radius: 5px;        /* Rounded corners (optional) */
+}
+
+#barGraph {
+    width: 40%;            /* Fixed width of the boxes */
+    height: 100%;           /* Fixed height of the boxes */
+    background-color: aliceblue; /* Background color for visibility */
+    color: black;            /* Text color */
+    display: flex;           /* Center text inside the box */
+    flex-direction: column;
+    border-radius: 5px;      /* Rounded corners (optional) */
+    box-sizing: border-box;
+}
+
+#barHeader {
+    height: 15%;               /* Top box takes 10% of the height */
+    background-color: green; /* Background color for visibility */
+    color: white;              /* Text color */
+    display: flex;             /* Center text inside the box */
+    justify-content: center;   /* Horizontally center text */
+    align-items: center;       /* Vertically center text */
+    border-radius: 5px 5px 0px 0px;        /* Rounded corners (optional) */
+    border-bottom: 2px solid black;
+}
+
+#barBody {
+    height: 85%;               /* Bottom box takes 90% of the height */
+    background-color: aliceblue; /* Background color for visibility */
+    color: white;              /* Text color */
+    display: flex;             /* Center text inside the box */
+    justify-content: center;   /* Horizontally center text */
+    align-items: center;       /* Vertically center text */
+    border-radius: 5px;        /* Rounded corners (optional) */
 }
 
 #profilePic {
@@ -64,21 +170,11 @@
     padding: 10px;           /* Optional padding around the container */
 }
 
-#completeList, #barGraph {
-    width: 40%;            /* Fixed width of the boxes */
-    height: 100%;           /* Fixed height of the boxes */
-    background-color: aliceblue; /* Background color for visibility */
-    color: black;            /* Text color */
-    display: flex;           /* Center text inside the box */
-    justify-content: center; /* Horizontally center text */
-    align-items: center;     /* Vertically center text */
-    border-radius: 5px;      /* Rounded corners (optional) */
-}
-
 #basicInfo {
     margin-right: 5%;
     width: 45%;
     text-align: center;
+    color: black;
 }
 
 hr {
@@ -88,4 +184,8 @@ hr {
 p {
     margin-bottom: 0;
     margin-top: 5%;
+}
+
+h2 {
+    margin: 0;
 }
