@@ -18,3 +18,12 @@ areaRouter.get('/', async (req, res) => {
         responseError(res, err)
     }
 })
+
+areaRouter.get("/:id", async (req, res) => {
+    try {
+        let u = await Area.findByPk(req.params.id, {include: [Climb, Location]});
+        u ? res.status(200).json(u.get({plain: true})) : responseNotFound(res, req.params.id);
+      } catch (err) {
+        responseError(res, err);
+      }
+})

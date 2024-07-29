@@ -18,3 +18,12 @@ locationRouter.get('/', async (req, res)=> {
         responseError(res, err);
     }
 })
+
+locationRouter.get("/:id", async (req, res) => {
+    try {
+        let u = await Location.findByPk(req.params.id, {include: Area});
+        u ? res.status(200).json(u.get({plain: true})) : responseNotFound(res, req.params.id);
+      } catch (err) {
+        responseError(res, err);
+      }
+})

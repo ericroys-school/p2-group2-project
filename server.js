@@ -39,6 +39,8 @@ app.use(Session(sessionStore));
 app.engine("handlebars", create({}).engine);
 app.set("view engine", "handlebars");
 app.use(express.static("public"));
+app.use(express.static("public/images"))
+app.use(express.static("public/css"))
 app.use(router);
 
 // sync sequelize models to the database, then turn on the server

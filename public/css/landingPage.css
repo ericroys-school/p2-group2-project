@@ -16,7 +16,7 @@
 
   .carousel-inner {
     position: relative;
-    padding-bottom: 58.2%; /* 16:9 aspect ratio */
+    padding-bottom: 58.2%;
     height: 0;
   }
   
@@ -41,7 +41,7 @@
     display: flex;
     width: 80%;
     max-width: 1200px;
-    height: 400px;
+    height: 100px;
     margin: auto;
     border-left: 2px solid black;
     border-right: 2px solid black;
