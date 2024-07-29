@@ -1,12 +1,9 @@
 import { getElement, getValue, resetError, setError } from "./util.js";
-
 getElement("submit").addEventListener("click", async (e) => {
   e.preventDefault();
   resetError();
-
-  let email = getValue("first-name");
-  let password = getValue("password2");
-  
+  let email = getValue("user");
+  let password = getValue("password");
   if (!email || !password) {
     setError(
       "Please enter all information to log in");
@@ -23,8 +20,7 @@ getElement("submit").addEventListener("click", async (e) => {
       setError(m.message);
       return;
     }
-
-    document.location.replace("/");
+    document.location.replace("/profile");
   } catch (err) {
     setError(err);
     return;
