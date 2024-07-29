@@ -1,0 +1,127 @@
+/* * {
+    box-sizing: border-box;
+}
+
+#containerOne {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#pbContainer {
+    display: flex;            
+    align-items: center;      
+    position: relative;
+    width: 40%;
+    height: 40%;
+    background-color: aliceblue;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+
+
+#toDoList {
+    display: flex;            
+    align-items: center;      
+    position: relative;
+    width: 40%;
+    height: 40%;
+    background-color: aliceblue;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+#completeList {
+    display: flex;            
+    align-items: center;      
+    margin-left: 10%;        
+    width: 40%;
+    height: 40%;
+    background-color: aliceblue;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+#barGraph {
+    display: flex;            
+    align-items: center;      
+    margin-left: 10%;        
+    width: 40%;
+    height: 40%;
+    background-color: aliceblue;
+    border: 2px solid black;
+    border-radius: 10px;
+} */
+
+/* Basic reset to ensure consistent styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#containerOne {
+    display: flex;           /* Use flexbox for layout */
+    justify-content: center; /* Center items horizontally (optional) */
+    align-items: center;     /* Center items vertically (optional) */
+    gap: 10px;               /* Space between boxes */
+    width: 100%;             /* Full width of the parent container */
+    height: 40%;           /* Full viewport height (optional) */
+    padding: 10px;           /* Optional padding around the container */
+}
+
+#pbContainer, #toDoList {
+    width: 40%;            /* Fixed width of the boxes */
+    height: 100%;           /* Fixed height of the boxes */
+    background-color: #007bff; /* Background color for visibility */
+    color: white;            /* Text color */
+    display: flex;           /* Center text inside the box */
+    justify-content: center; /* Horizontally center text */
+    align-items: center;     /* Vertically center text */
+    border-radius: 5px;      /* Rounded corners (optional) */
+}
+
+#profilePic {
+    width: 55%;
+    height: 85%;
+    overflow: hidden;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    margin-left: 2%;
+}
+
+#profilePic img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#containerTwo {
+    display: flex;           /* Use flexbox for layout */
+    justify-content: center; /* Center items horizontally (optional) */
+    align-items: center;     /* Center items vertically (optional) */
+    gap: 10px;               /* Space between boxes */
+    width: 100%;             /* Full width of the parent container */
+    height: 40%;           /* Full viewport height (optional) */
+    padding: 10px;           /* Optional padding around the container */
+}
+
+#completeList, #barGraph {
+    width: 40%;            /* Fixed width of the boxes */
+    height: 100%;           /* Fixed height of the boxes */
+    background-color: #007bff; /* Background color for visibility */
+    color: white;            /* Text color */
+    display: flex;           /* Center text inside the box */
+    justify-content: center; /* Horizontally center text */
+    align-items: center;     /* Vertically center text */
+    border-radius: 5px;      /* Rounded corners (optional) */
+}
