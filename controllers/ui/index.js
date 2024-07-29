@@ -5,6 +5,7 @@ import { Area } from "../../models/Area.js";
 import { Climb } from "../../models/Climb.js";
 import { Difficulty_YDS } from "../../models/Difficulty_YDS.js"
 import { Climb_Comment } from "../../models/Climb_Comment.js"
+import { Climb_Activity } from "../../models/Climb_Activity.js";
 
 router.get("/", async (req, res) => {
   res.render("landingPage");
@@ -60,7 +61,9 @@ router.get("/climb/:id", async (req, res) => {
       return; 
     }
     let climb = cl.get({plain: true});
-    res.render("climb", {climb})
+
+    let {uid, isLoggedIn } = req.session;
+    res.render("climb", { climb, uid, isLoggedIn })
   }catch(err){
     console.error(err)
     res.render("error", {error: err})
