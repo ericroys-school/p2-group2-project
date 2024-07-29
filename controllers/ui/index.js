@@ -5,6 +5,8 @@ import { Area } from "../../models/Area.js";
 import { Climb } from "../../models/Climb.js";
 import { Difficulty_YDS } from "../../models/Difficulty_YDS.js"
 import { Climb_Comment } from "../../models/Climb_Comment.js"
+import { User } from "../../models/User.js"
+import { Climb_Activity } from '../../models/Climb_Activity.js'
 
 router.get("/", async (req, res) => {
   res.render("landingPage");
@@ -43,10 +45,18 @@ router.get("/area", async (req, res) => {
 });
 router.get("/profile", async (req, res) => {
   if(req.session && req.session.isLoggedIn && req.session.uid){
-    console.log('whats up');
     try{
-      let user = await User.findByPK(id);
-      res.render("profile", {user});
+      let u = await User.findOne(
+        { where: {
+          id: req.session.uid
+        },
+        include: [Climb, Climb_Comment]
+        }
+      );
+      let user = u.get({plain: true});
+      console.log(JSON.stringify(user, null, 3))
+      let {uid, isLoggedIn } = req.session;
+      res.render("profile", {user, uid, isLoggedIn});
   }catch(err) {
       console.error(err)
       res.render("error", {error: err})
