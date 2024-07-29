@@ -1,0 +1,75 @@
+fieldset {
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+img {
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.664);
+}
+
+#areaList {
+    text-align: center;
+    background-color: aliceblue;
+    color: black;
+    margin-bottom: 2%;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.664);
+}
+
+#areaList h1 {
+    border-bottom: 2px solid black;
+}
+
+#areaList a {
+    margin-bottom: 2;
+}
+
+#areaInfo {
+    text-align: center;
+    background-color: aliceblue;
+    color: black;
+    margin-bottom: 2%;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.664);
+}
+
+#areaInfo h1, h2 {
+    border-bottom: 2px solid black;
+}
+
+#areaInfo h2 {
+    margin-top: 1%;
+}
+
+#areaInfo a {
+    margin-bottom: 1%;
+}
+
+#climbInfo {
+    text-align: center;
+    background-color: aliceblue;
+    color: black;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.664);
+}
+
+#climbInfo h1 {
+    border-bottom: 2px solid black;
+}
+
+#climbInfo button {
+    margin-bottom: 1%;
+}
+
+#climbInfo img {
+    margin-bottom: 2%;
+}
+
