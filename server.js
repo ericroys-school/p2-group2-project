@@ -16,7 +16,7 @@ app.use(router);
 app.engine("handlebars", create({}).engine);
 app.set("view engine", "handlebars");
 app.use(express.static("public"));
-
+app.use(express.static("public/images"))
 //serve the start page
 // app.get("/", (req, res) => res.sendFile(path.join(dir, "/public/index.html")));
 
