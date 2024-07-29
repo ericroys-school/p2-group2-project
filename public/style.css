@@ -130,7 +130,6 @@
     list-style: none;
     margin: 0;
     background: #485367;
-    border-radius: 5px;
     /* to fix the styling collapse from floating it */
     overflow: auto;
     margin-bottom: 2%;
@@ -168,4 +167,17 @@
 
 p {
   margin: 0;
+}
+
+footer {
+  list-style: none;
+  margin: 0;
+  background: #485367;
+  /* to fix the styling collapse from floating it */
+  overflow: auto;
+  margin-top: 2%;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-top: 0;
+  padding-bottom: 0;
 }
