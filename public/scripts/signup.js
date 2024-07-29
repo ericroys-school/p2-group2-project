@@ -27,7 +27,7 @@ getElement("submit").addEventListener("click", async (e) => {
       return;
     }
 
-    document.location.replace("/");
+    document.location.replace("/login");
   } catch (err) {
     setError(err);
     return;
