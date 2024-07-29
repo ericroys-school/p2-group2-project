@@ -18,10 +18,17 @@ export function getElement(id) {
     return getElement(id).value;
   }
 
-  export function setError(msg){
+  function setText(msg, style){
     let err = getElement('error-msg');
     err.innerHTML = msg;
-    err.setAttribute('class',"alert alert-danger");
+    err.setAttribute('class', style);
+  }
+  export function setError(msg){
+    setText(msg, "alert alert-danger");    
+  }
+
+  export function setMessage(msg){
+    setText(msg, "alert alert-light");
   }
 
   export function resetError(){
