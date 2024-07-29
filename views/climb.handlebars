@@ -1,0 +1,15 @@
+  {{!-- <div id="climbInfo"> --}}
+<h1>{{climb.name}}</h1>
+<h3>Grade: {{climb.difficulty.name}}</h3>
+<p>Length: {{climb.length}} meters</p>
+<p>Coordinates:
+  <a
+    href="https://www.google.com/maps?q={{climb.coodinates}}"
+    target="_blank"
+  >{{climb.coordinates}}</a></p>
+<button id="toDoButton">Add To List</button><br />
+<img src="{{climb.photo}}" alt="{{climb.name}}" style="max-width: 100%; height: auto;" />
+<p>Comments:</p>
+<p></p>
+<button id="addCommentButton">Add A Comment</button>`
+{{!-- </div> --}}
