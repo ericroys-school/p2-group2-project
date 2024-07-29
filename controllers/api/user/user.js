@@ -51,11 +51,13 @@ userRouter.post("/login", async (req, res) => {
       attributes: ["password", "email", "id"],
     });
     if (!u) {
+      console.log('hello');
       responseUnauthorized(res);
       return;
     }
     let isv = await u.isValidPassword(password);
     if (!isv) {
+      console.log('goodbye');
       responseUnauthorized(res);
       return;
     } else {
@@ -67,6 +69,7 @@ userRouter.post("/login", async (req, res) => {
       });
     }
   } catch (err) {
+    console.error(err);
     responseError(res, err);
   }
 });

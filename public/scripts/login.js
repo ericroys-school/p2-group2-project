@@ -4,18 +4,18 @@ getElement("submit").addEventListener("click", async (e) => {
   e.preventDefault();
   resetError();
 
-  let UserName = getValue("user");
-  let password = getValue("password");
+  let email = getValue("first-name");
+  let password = getValue("password2");
   
-  if (!userName || password) {
+  if (!email || !password) {
     setError(
-      "Please enter all information to create an entry");
+      "Please enter all information to log in");
     return;
   }
   try {
-    const res = await fetch("/api/user", {
+    const res = await fetch("/api/user/login", {
       method: "POST",
-      body: JSON.stringify({ UserName, password }),
+      body: JSON.stringify({ email, password }),
       headers: { "Content-Type": "application/json" },
     });
     if (!res.ok) {

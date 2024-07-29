@@ -1,10 +1,8 @@
-[
-    {
-        "id": "a2946482-0a4a-4dbe-b903-92463a9998b1",
-        "first_name": "Demo",
-        "last_name": "User",
-        "email": "demo@user.com",
-        "password": "12345678",
-        "location_id": "cd63ec05-7524-499d-9f85-cb3082b18afa"
-    }
-]
+{
+  "id": "a2946482-0a4a-4dbe-b903-92463a9998b1",
+  "first_name": "Demo",
+  "last_name": "User",
+  "email": "demo@user.com",
+  "password": "12345678",
+  "location_id": "cd63ec05-7524-499d-9f85-cb3082b18afa"
+}

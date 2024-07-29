@@ -2,6 +2,7 @@ import { Router } from "express";
 const router = Router();
 import { Location } from "../../models/Location.js";
 import { Area } from "../../models/Area.js";
+import { User } from "../../models/User.js";
 
 router.get("/", async (req, res) => {
   res.render("landingPage");
@@ -39,7 +40,18 @@ router.get("/area", async (req, res) => {
   }
 });
 router.get("/profile", async (req, res) => {
-  res.render("profile");
+  if(req.session && req.session.isLoggedIn && req.session.uid){
+    console.log('whats up');
+    try{
+      let user = await User.findByPK(id);
+      res.render("profile", {user});
+  }catch(err) {
+      console.error(err)
+      res.render("error", {error: err})
+  }} else {
+    console.log('Hello');
+    res.render("login");
+  } 
 });
 router.get("/search", async (req, res) => {
   res.render("search");

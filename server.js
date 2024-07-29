@@ -20,7 +20,7 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 const dir = path.dirname(fileURLToPath(import.meta.url));
 const sessionStore = {
-  secret: '',
+  secret: 'jsdfjklsdfj',
   cookie: {
     //four hour expire
     maxAge: 4 * 60 * 60 * 1000, 
