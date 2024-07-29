@@ -17,6 +17,7 @@ app.engine("handlebars", create({}).engine);
 app.set("view engine", "handlebars");
 app.use(express.static("public"));
 app.use(express.static("public/images"))
+app.use(express.static("public/css"))
 //serve the start page
 // app.get("/", (req, res) => res.sendFile(path.join(dir, "/public/index.html")));
 
