@@ -113,7 +113,7 @@
 
   footer {
     text-align: center;
-    margin-top: 25%;
+    margin-top: 5%;
     /* 
     Should be centered
    */
@@ -146,3 +146,6 @@
     color: #f4f4f4;
 }
 
+p {
+  margin: 0;
+}
