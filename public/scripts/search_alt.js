@@ -67,6 +67,8 @@ async function stateChangeHandler(event) {
   let selectedStateId = $(this).val();
   let areas = await getAreas(selectedStateId);
   if (areas) {
+    $("#areaList").empty();
+    $("#areaList").append(`<h2>Area List</h2>`);
     let al = $("#areaList");
     areas.forEach((i) => {
       let areaLink = $("<a>")
