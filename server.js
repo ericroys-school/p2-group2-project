@@ -20,7 +20,7 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 const dir = path.dirname(fileURLToPath(import.meta.url));
 const sessionStore = {
-  secret: '',
+  secret: 'blah',
   cookie: {
     //four hour expire
     maxAge: 4 * 60 * 60 * 1000, 
@@ -34,12 +34,12 @@ const sessionStore = {
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(router);
+
 app.use(Session(sessionStore));
 app.engine("handlebars", create({}).engine);
 app.set("view engine", "handlebars");
 app.use(express.static("public"));
-
+app.use(router);
 
 // sync sequelize models to the database, then turn on the server
 dbConnect.sync().then(() => {
