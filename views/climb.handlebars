@@ -1,18 +1,23 @@
-<link rel="stylesheet" href="/css/searchPage.css">
-{{!-- <link rel="stylesheet" href="/style.css"> --}}
- 
+<link rel="stylesheet" href="/searchPage.css">
+<link rel="stylesheet" href="/style.css"> 
+
 <div id="climbInfo">
 <h1>{{climb.name}}</h1>
-<h3>Grade: {{climb.difficulty.name}}</h3>
+<h3>Grade: {{climb.difficulty_yd.name}}</h3>
 <p>Length: {{climb.length}} meters</p>
 <p>Coordinates:
   <a
     href="https://www.google.com/maps?q={{climb.coodinates}}"
     target="_blank"
   >{{climb.coordinates}}</a></p>
-<button id="toDoButton">Add To List</button><br />
+  <p id="error-msg"></p>
+<button id="toDoButton" data-id="{{climb.id}}">Add To My List</button><br />
 <img src="{{climb.photo}}" alt="{{climb.name}}" style="max-width: 100%; height: auto;" />
-<p>Comments:</p>
+{{!-- <p>Comments:</p>
+
 <p></p>
-<button id="addCommentButton">Add A Comment</button>
+<button id="addComment" data-id="{{climb.id}}">Add A Comment</button>
+<textarea id="comment" placeholder="Add a comment"></textarea> --}}
 </div>
+
+<script type="module" src="/scripts/climb.js"></script>

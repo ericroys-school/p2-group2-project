@@ -14,3 +14,7 @@ export const responseUserError = (res, err) => {
 export const responseUnauthorized = (res) => {
     res.status(401).json({error: "Unable to validate credentials", message: "Bad credentials or access to resource is forbidden"})
 }
+
+export const responseLogin = (req, res, next) => {
+    !req.session.isLoggedIn ? res.redirect('/login') : next()
+}
