@@ -21,6 +21,6 @@ Difficulty_YDS.bulkCreate(
 );
 Area.bulkCreate(JSON.parse(await readFile(__dirname + "/area.json")));
 Climb.bulkCreate(JSON.parse(await readFile(__dirname + "/climb.json")));
-User.bulkCreate(JSON.parse(await readFile(__dirname + "/user.json")));
+User.create(JSON.parse(await readFile(__dirname + "/user.json")));
 //this one can't be done without also having a user relations
 // Climb_Comment.bulkCreate(JSON.parse(await readFile(__dirname + "/climb_comment.json")));

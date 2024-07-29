@@ -48,7 +48,7 @@ userRouter.post("/login", async (req, res) => {
   try {
     let u = await User.findOne({
       where: { email: email },
-      attributes: ["password", "email"],
+      attributes: ["password", "email", "id"],
     });
     if (!u) {
       responseUnauthorized(res);
@@ -59,12 +59,15 @@ userRouter.post("/login", async (req, res) => {
       responseUnauthorized(res);
       return;
     } else {
+
       req.session.save(() => {
         req.session.isLoggedIn = true;
+        req.session.uid =  u.getDataValue("id")
         res.status(200).json({ message: "login accepted" });
       });
     }
   } catch (err) {
+    console.error(err)
     responseError(res, err);
   }
 });
