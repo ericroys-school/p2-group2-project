@@ -53,7 +53,7 @@ $( function() {
                 $("#climbList").empty();
                 $("#climbInfo").empty();
 
-                $("#areaList").append(`<h2>Area List:</h2>`);
+                $("#areaList").append(`<h1>Area List</h1>`);
 
                 if (areasForState.length > 0) {
                     areasForState.forEach(item => {
@@ -86,7 +86,7 @@ $( function() {
 
                         var climbsForArea = selectedAreaData.climbs.filter(climb => climb.area_id === selectedAreaId);
 
-                        var climbsHtml = climbsForArea.length > 0 ? '<h2>Climbs In This Area:</h2>' : '';
+                        var climbsHtml = climbsForArea.length > 0 ? '<h2>Climbs In This Area</h2>' : '';
                         climbsForArea.forEach(climb => {
                             climbsHtml += `<div><a href="#" data-climbId="${climb.id}">${climb.name}</a></div>`;
                         });
