@@ -97,7 +97,6 @@ async function areaHandler(event){
 
         $("#areaInfo").html(
             `<h1>${areaData.name}</h1>
-                           <h3>State: ${areaData.location.state}</h3>
                            <p>Coordinates: <a href="${gmaps}" target="_blank">${areaData.coordinates}</a></p>
                            <img src="${areaData.photo}" alt="${areaData.name}" style="max-width: 100%; height: auto;">
                            ${climbsHtml}`
