@@ -6,7 +6,7 @@
         "difficulty_id": "36aac5d9-a199-4e32-aa38-6dc68c583624",
         "length": 15,
         "coordinates": "29.60343, -98.55349",
-        "photo": "images/Medicine Wall TX/Two Cracked Teeth.jpg"
+        "photo": "/Medicine Wall TX/Two Cracked Teeth.jpg"
     },
     {
         "id": "b18b30a9-1c8e-43a2-9856-369a5a1369c3",
@@ -15,7 +15,7 @@
         "difficulty_id": "37b27a2b-7718-4294-ace6-b78b07463e54",
         "length": 15,
         "coordinates": "29.60343, -98.55349",
-        "photo": "images/Medicine Wall TX/Fear Of Falling.jpg"
+        "photo": "/Medicine Wall TX/Fear Of Falling.jpg"
     },
     {
         "id": "f0a1bb7f-b458-46ac-bd57-335064ab75c1",
@@ -24,7 +24,7 @@
         "difficulty_id": "a1d505d4-dacc-4826-a94c-9920928e5e75",
         "length": 17,
         "coordinates": "29.60351, -98.55424",
-        "photo": "images/Medicine Wall TX/Adverse Reaction To Gravity.jpg"
+        "photo": "/Medicine Wall TX/Adverse Reaction To Gravity.jpg"
     },
     {
         "id": "b42e8916-80f9-4c58-8672-39da23c71af6",
@@ -33,7 +33,7 @@
         "difficulty_id": "0035ae3d-0607-4d1b-a297-95ffae8782e2",
         "length": 15,
         "coordinates": "29.60351, -98.55424",
-        "photo": "images/Medicine Wall TX/Time Machine.jpg"
+        "photo": "/Medicine Wall TX/Time Machine.jpg"
     },
     {
         "id": "05d31eae-8b71-41d7-8c94-2154321b6744",
@@ -42,7 +42,7 @@
         "difficulty_id": "c8deeb7f-a5c5-4c31-90c2-372aeca89885",
         "length": 15,
         "coordinates": "29.60348, -98.55398",
-        "photo": "images/Medicine Wall TX/Texas Caterpillar.jpg"
+        "photo": "/Medicine Wall TX/Texas Caterpillar.jpg"
     },
     {
         "id": "55f21262-5ec9-4b2c-a43c-47d0526165f8",
@@ -51,7 +51,7 @@
         "difficulty_id": "477e7d31-0544-4f73-9628-c289e2698d51",
         "length": 20,
         "coordinates": "29.60348, -98.55398",
-        "photo": "images/Medicine Wall TX/Crossover.jpg"
+        "photo": "/Medicine Wall TX/Crossover.jpg"
     },
     {
         "id": "ea1c66c9-9fd6-4f36-b3c3-4fa33e62991e",
@@ -60,7 +60,7 @@
         "difficulty_id": "36aac5d9-a199-4e32-aa38-6dc68c583624",
         "length": 9,
         "coordinates": "33.28612, -111.07589",
-        "photo": "images/Queen's Creek Canyon AZ/Knotty Tower.jpg"
+        "photo": "/Queen's Creek Canyon AZ/Knotty Tower.jpg"
     },
     {
         "id": "33c4aa80-1da4-4e3b-a140-f624bd175efc",
@@ -69,7 +69,7 @@
         "difficulty_id": "c8deeb7f-a5c5-4c31-90c2-372aeca89885",
         "length": 91,
         "coordinates": "33.28612, -111.07589",
-        "photo": "images/Queen's Creek Canyon AZ/Victorio.jpg"
+        "photo": "/Queen's Creek Canyon AZ/Victorio.jpg"
     },
     {
         "id": "51c97c16-4d74-4ce1-8f89-d2bd8d27a9ca",
@@ -78,7 +78,7 @@
         "difficulty_id": "477e7d31-0544-4f73-9628-c289e2698d51",
         "length": 45,
         "coordinates": "33.28809, -111.07704",
-        "photo": "images/Queen's Creek Canyon AZ/Broken Arrow.jpg"
+        "photo": "/Queen's Creek Canyon AZ/Broken Arrow.jpg"
     },
     {
         "id": "25129f11-4639-4b5e-ab32-d56a635a0221",
@@ -87,7 +87,7 @@
         "difficulty_id": "bb5e755f-7e92-4c0d-9c60-bf8c1fdda21a",
         "length": 45,
         "coordinates": "33.28809, -111.07704",
-        "photo": "images/Queen's Creek Canyon AZ/Puzzle Pieces.jpg"
+        "photo": "/Queen's Creek Canyon AZ/Puzzle Pieces.jpg"
     },
     {
         "id": "418faa1b-1c67-4b4c-bbe6-032f4601a972",
@@ -96,7 +96,7 @@
         "difficulty_id": "4f6264bb-6064-46fc-9f1c-8b96dd036236",
         "length": 21,
         "coordinates": "33.2728, -111.0475",
-        "photo": "images/Queen's Creek Canyon AZ/Heaven Can Wait.jpg"
+        "photo": "/Queen's Creek Canyon AZ/Heaven Can Wait.jpg"
     },
     {
         "id": "a337ea77-b87a-4e9e-9d09-ceddd0d0fa4f",
@@ -105,7 +105,7 @@
         "difficulty_id": "4f6264bb-6064-46fc-9f1c-8b96dd036236",
         "length": 35,
         "coordinates": "33.27681, -111.02935",
-        "photo": "images/Queen's Creek Canyon AZ/Eyes Of The World.jpg"
+        "photo": "/Queen's Creek Canyon AZ/Eyes Of The World.jpg"
     },
     {
         "id": "ce7fed7c-2f1c-4d75-92c9-a599d97f764a",
@@ -114,7 +114,7 @@
         "difficulty_id": "36aac5d9-a199-4e32-aa38-6dc68c583624",
         "length": 21,
         "coordinates": "34.02283, -116.15688",
-        "photo": "images/Joshua Tree CA/Touch And Go.jpg"
+        "photo": "/Joshua Tree CA/Touch And Go.jpg"
     },
     {
         "id": "2665ff8c-74fd-42e9-94b7-8ec9d0b5f154",
@@ -123,7 +123,7 @@
         "difficulty_id": "bb5e755f-7e92-4c0d-9c60-bf8c1fdda21a",
         "length": 24,
         "coordinates": "34.02283, -116.15688",
-        "photo": "images/Joshua Tree CA/The Cornerstone.jpg"
+        "photo": "/Joshua Tree CA/The Cornerstone.jpg"
     },
     {
         "id": "454528a5-31c9-4578-9f60-f13f70adeaa1",
@@ -132,7 +132,7 @@
         "difficulty_id": "ffdff59d-2112-49d6-8517-f1ea67c174f5",
         "length": 9,
         "coordinates": "34.10981, -116.13302",
-        "photo": "images/Joshua Tree CA/The Prayer.jpg"
+        "photo": "/Joshua Tree CA/The Prayer.jpg"
     },
     {
         "id": "90305add-d5ef-4611-b874-4633462b0cfe",
@@ -141,7 +141,7 @@
         "difficulty_id": "c8deeb7f-a5c5-4c31-90c2-372aeca89885",
         "length": 8,
         "coordinates": "34.10981, -116.13302",
-        "photo": "images/Joshua Tree CA/Etude No. 5.jpg"
+        "photo": "/Joshua Tree CA/Etude No. 5.jpg"
     },
     {
         "id": "d69a3bdd-8450-46e3-9e08-8a86f2b085b1",
@@ -150,7 +150,7 @@
         "difficulty_id": "bb5e755f-7e92-4c0d-9c60-bf8c1fdda21a",
         "length": 24,
         "coordinates": "34.0233, -116.17866",
-        "photo": "images/Joshua Tree CA/MetroLink.jpg"
+        "photo": "/Joshua Tree CA/MetroLink.jpg"
     },
     {
         "id": "708ecf93-cb35-4660-b320-f786d2fc3cef",
@@ -159,7 +159,7 @@
         "difficulty_id": "c8deeb7f-a5c5-4c31-90c2-372aeca89885",
         "length": 27,
         "coordinates": "34.0233, -116.17866",
-        "photo": "images/Joshua Tree CA/Cake Walk.jpg"
+        "photo": "/Joshua Tree CA/Cake Walk.jpg"
     },
     {
         "id": "ac82ec28-c28b-4a73-81c4-b998899888be",
@@ -168,7 +168,7 @@
         "difficulty_id": "a1d505d4-dacc-4826-a94c-9920928e5e75",
         "length": 64,
         "coordinates": "38.10607, -109.57104",
-        "photo": "images/Indian Creek UT/Useful Public Service.jpg"
+        "photo": "/Indian Creek UT/Useful Public Service.jpg"
     },
     {
         "id": "e16b1b97-bf9b-452c-baa8-f401d6677599",
@@ -177,7 +177,7 @@
         "difficulty_id": "36aac5d9-a199-4e32-aa38-6dc68c583624",
         "length": 15,
         "coordinates": "38.10607, -109.57104",
-        "photo": "images/Indian Creek UT/Light Duty.jpg"
+        "photo": "/Indian Creek UT/Light Duty.jpg"
     },
     {
         "id": "d3f77778-ece1-4c2d-9fd2-94dbadf11f6d",
@@ -186,7 +186,7 @@
         "difficulty_id": "36aac5d9-a199-4e32-aa38-6dc68c583624",
         "length": 18,
         "coordinates": "38.08284, -109.56274",
-        "photo": "images/Indian Creek UT/Good Excuse.jpg"
+        "photo": "/Indian Creek UT/Good Excuse.jpg"
     },
     {
         "id": "7f268b42-993b-466d-bc5f-5344fed6ca83",
@@ -195,7 +195,7 @@
         "difficulty_id": "37b27a2b-7718-4294-ace6-b78b07463e54",
         "length": 42,
         "coordinates": "38.08284, -109.56274",
-        "photo": "images/Indian Creek UT/Slot Machine.jpg"
+        "photo": "/Indian Creek UT/Slot Machine.jpg"
     },
     {
         "id": "a5c7d42f-02ef-4c03-8d7d-268cc0bdd83d",
@@ -204,7 +204,7 @@
         "difficulty_id": "36aac5d9-a199-4e32-aa38-6dc68c583624",
         "length": 15,
         "coordinates": "38.04022, -109.59149",
-        "photo": "images/Indian Creek UT/Generic Spark.jpg"
+        "photo": "/Indian Creek UT/Generic Spark.jpg"
     },
     {
         "id": "a225d74d-b5c5-4685-bb05-4d712408e155",
@@ -213,7 +213,7 @@
         "difficulty_id": "70e0992a-ca76-40d7-869c-2caf05377263",
         "length": 18,
         "coordinates": "38.04022, -109.59149",
-        "photo": "images/Indian Creek UT/What A Fool Believes.jpg"
+        "photo": "/Indian Creek UT/What A Fool Believes.jpg"
     },
     {
         "id": "70f8100a-fe84-4c10-a813-13846fe388aa",
@@ -222,7 +222,7 @@
         "difficulty_id": "6fc2cd9e-cfcf-4a86-b9b0-c25ae9328fcb",
         "length": 44,
         "coordinates": "44.58978, -104.71537",
-        "photo": "images/Devil's Tower WY/Blue Stem Skyway.jpg"
+        "photo": "/Devil's Tower WY/Blue Stem Skyway.jpg"
     },
     {
         "id": "9cb01524-2a09-4180-8317-a569917370df",
@@ -231,7 +231,7 @@
         "difficulty_id": "36aac5d9-a199-4e32-aa38-6dc68c583624",
         "length": 152,
         "coordinates": "44.58978, -104.71537",
-        "photo": "images/Devil's Tower WY/Durrance.jpg"
+        "photo": "/Devil's Tower WY/Durrance.jpg"
     },
     {
         "id": "0b4bb4c0-4dfa-4e20-831a-65cd342dcd19",
@@ -240,7 +240,7 @@
         "difficulty_id": "2c52c363-b5ce-49dd-b4b0-75637eeb26ae",
         "length": 48,
         "coordinates": "44.59158, -104.71485",
-        "photo": "images/Devil's Tower WY/Spiney Norman.jpg"
+        "photo": "/Devil's Tower WY/Spiney Norman.jpg"
     },
     {
         "id": "0bef8e14-9039-471c-a1fc-2ac973b9e978",
@@ -249,7 +249,7 @@
         "difficulty_id": "c8deeb7f-a5c5-4c31-90c2-372aeca89885",
         "length": 52,
         "coordinates": "44.59158, -104.71485",
-        "photo": "images/Devil's Tower WY/Friend Of The Devil.jpg"
+        "photo": "/Devil's Tower WY/Friend Of The Devil.jpg"
     },
     {
         "id": "2727b26a-ffd9-4094-a006-b33a23cc20b5",
@@ -258,7 +258,7 @@
         "difficulty_id": "bb5e755f-7e92-4c0d-9c60-bf8c1fdda21a",
         "length": 39,
         "coordinates": "44.59062, -104.71615",
-        "photo": "images/Devil's Tower WY/Fractal.jpg"
+        "photo": "/Devil's Tower WY/Fractal.jpg"
     },
     {
         "id": "cf0a95db-faad-4e6a-a38e-ddca23110f27",
@@ -267,7 +267,7 @@
         "difficulty_id": "d7b68b7b-b2e4-4cec-beb8-175ce178e40b",
         "length": 36,
         "coordinates": "44.59062, -104.71615",
-        "photo": "images/Devil's Tower WY/A Bridge Too Far.jpg"
+        "photo": "/Devil's Tower WY/A Bridge Too Far.jpg"
     },
     {
         "id": "487d5a70-6ed4-4f6e-b496-078b5d0f9643",
@@ -276,7 +276,7 @@
         "difficulty_id": "36aac5d9-a199-4e32-aa38-6dc68c583624",
         "length": 8,
         "coordinates": "30.3645, -98.1264",
-        "photo": "images/Reimer's Ranch TX/Arbortrary.jpg"
+        "photo": "/Reimer's Ranch TX/Arbortrary.jpg"
     },
     {
         "id": "2a21af8f-c3a5-4824-85a9-c4f49f62210d",
@@ -285,7 +285,7 @@
         "difficulty_id": "477e7d31-0544-4f73-9628-c289e2698d51",
         "length": 8,
         "coordinates": "30.3645, -98.1264",
-        "photo": "images/Reimer's Ranch TX/Kindling.jpg"
+        "photo": "/Reimer's Ranch TX/Kindling.jpg"
     },
     {
         "id": "41c24779-b082-43a4-8ac7-b34d01c404ea",
@@ -294,7 +294,7 @@
         "difficulty_id": "2c52c363-b5ce-49dd-b4b0-75637eeb26ae",
         "length": 8,
         "coordinates": "30.3664, -98.1287",
-        "photo": "images/Reimer's Ranch TX/Ten Foot Pole.jpg"
+        "photo": "/Reimer's Ranch TX/Ten Foot Pole.jpg"
     },
     {
         "id": "44cdfb27-147d-4cb9-9490-9c6958413f8d",
@@ -303,7 +303,7 @@
         "difficulty_id": "323b0af6-b9ca-4e61-80d5-789a22986358",
         "length": 12,
         "coordinates": "30.36155, -98.12531",
-        "photo": "images/Reimer's Ranch TX/Jade.jpg"
+        "photo": "/Reimer's Ranch TX/Jade.jpg"
     },
     {
         "id": "9ba29b84-15b4-46a7-aaaf-070ae7aef293",
@@ -312,7 +312,7 @@
         "difficulty_id": "323b0af6-b9ca-4e61-80d5-789a22986358",
         "length": 12,
         "coordinates": "30.36155, -98.12531",
-        "photo": "images/Reimer's Ranch TX/Rain Dance.jpg"
+        "photo": "/Reimer's Ranch TX/Rain Dance.jpg"
     },
     {
         "id": "c4a41fcb-3732-4e63-bb4c-a7c0a8968372",
@@ -321,6 +321,6 @@
         "difficulty_id": "7881c372-020e-4974-8eaa-edc70115c122",
         "length": 8,
         "coordinates": "30.363, -98.125",
-        "photo": "images/Reimer's Ranch TX/Clambering Kimberly.jpg"
+        "photo": "/Reimer's Ranch TX/Clambering Kimberly.jpg"
     }
 ]

@@ -4,12 +4,14 @@ import { userRouter } from './user/user.js';
 import { locationRouter } from './location/location.js';
 import { areaRouter } from './area/area.js';
 import { climbRouter } from './climb/climb.js';
+import { activeRoute } from './activity/activity.js';
 const router = Router();
 router.use('/difficulty', difficultyRouter)
 router.use('/user', userRouter)
 router.use('/location', locationRouter)
 router.use('/area', areaRouter)
 router.use('/climb', climbRouter)
+router.use('/activity', activeRoute);
 
 // router.get('/', async (req, res) => {
 // res.render('landingPage');
