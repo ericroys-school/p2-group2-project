@@ -11,12 +11,13 @@
     target="_blank"
   >{{climb.coordinates}}</a></p>
   <p id="error-msg"></p>
-<button id="toDoButton" data-id="{{climb.id}}" display="false">Add To List</button><br />
+<button id="toDoButton" data-id="{{climb.id}}">Add To My List</button><br />
 <img src="{{climb.photo}}" alt="{{climb.name}}" style="max-width: 100%; height: auto;" />
-<p>Comments:</p>
+{{!-- <p>Comments:</p>
 
 <p></p>
-<button id="addCommentButton">Add A Comment</button>
+<button id="addComment" data-id="{{climb.id}}">Add A Comment</button>
+<textarea id="comment" placeholder="Add a comment"></textarea> --}}
 </div>
 
 <script type="module" src="/scripts/climb.js"></script>
