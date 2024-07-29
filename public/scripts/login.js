@@ -1,21 +1,18 @@
 import { getElement, getValue, resetError, setError } from "./util.js";
-
 getElement("submit").addEventListener("click", async (e) => {
   e.preventDefault();
   resetError();
-
-  let UserName = getValue("user");
+  let email = getValue("user");
   let password = getValue("password");
-  
-  if (!userName || password) {
+  if (!email || !password) {
     setError(
-      "Please enter all information to create an entry");
+      "Please enter all information to log in");
     return;
   }
   try {
-    const res = await fetch("/api/user", {
+    const res = await fetch("/api/user/login", {
       method: "POST",
-      body: JSON.stringify({ UserName, password }),
+      body: JSON.stringify({ email, password }),
       headers: { "Content-Type": "application/json" },
     });
     if (!res.ok) {
@@ -23,8 +20,7 @@ getElement("submit").addEventListener("click", async (e) => {
       setError(m.message);
       return;
     }
-
-    document.location.replace("/");
+    document.location.replace("/profile");
   } catch (err) {
     setError(err);
     return;
