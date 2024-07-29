@@ -2,6 +2,7 @@ import { dbConnect } from "../config/connection.js";
 import { Area } from "../models/Area.js";
 import { Difficulty_YDS } from "../models/Difficulty_YDS.js";
 import { Location } from "../models/Location.js";
+import { User } from "../models/User.js";
 import { readFile } from "node:fs/promises";
 import { dirname } from "path";
 import { fileURLToPath } from "url";
@@ -20,5 +21,6 @@ Difficulty_YDS.bulkCreate(
 );
 Area.bulkCreate(JSON.parse(await readFile(__dirname + "/area.json")));
 Climb.bulkCreate(JSON.parse(await readFile(__dirname + "/climb.json")));
+User.bulkCreate(JSON.parse(await readFile(__dirname + "/user.json")));
 //this one can't be done without also having a user relations
 // Climb_Comment.bulkCreate(JSON.parse(await readFile(__dirname + "/climb_comment.json")));

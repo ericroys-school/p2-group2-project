@@ -4,26 +4,28 @@ $( function() {
     
         Promise.all([
             fetch('/api/area').then(response => response.json()),
-            fetch('/api/location').then(response => response.json())
-            // fetch('/api/climb').then(response => response.json()),
-            // fetch('/api/difficulty_yds').then(response => response.json()),
-            // fetch('/api/climb_comment').then(response => response.json())
-        ]) .then(([areaData, locationData, climbData, difficultyData, commentData]) => {
+            fetch('/api/location').then(response => response.json()),
+            fetch('/api/climb').then(response => response.json())
+        ]) .then(([areaData, locationData, combinedData]) => {
             console.log('Area Data: ', areaData);
             console.log('Location Data: ', locationData);
-            console.log('Climb Data: ', climbData);
-            console.log('Difficulty Data ', difficultyData);
-            console.log('Comment Data: ', commentData);
+            console.log('Combined Data: ', combinedData);
 
             const locationDataMap = locationData.reduce((map, item) => {
                 map[item.id] = item;
                 return map;
             }, {});
 
-            // const difficultyMap = difficultyData.reduce((map, item) => {
-            //     map[item.id] = item.name;
-            //     return map;
-            // }, {});
+            const climbData = combinedData;
+            const difficultyMap = {};
+
+            climbData.forEach(climb => {
+                if (climb.difficulty_yd) {
+                    difficultyMap[climb.difficulty_id] = climb.difficulty_yd.name;
+                }
+            });
+
+            console.log("Difficulty Map: ",difficultyMap);
 
             // const commentMap = commentData.reduce((map, item) => {
             //     if (item.climb_id && item.text) {
@@ -119,7 +121,7 @@ $( function() {
 
                 $("#climbInfo").html(
                     `<h1>${selectedClimbData.name}</h1>
-                    <h3>Grade: </h3>
+                    <h3>Grade: ${difficultyMap[selectedClimbData.difficulty_id]}</h3>
                     <p>Length: ${selectedClimbData.length} meters</p>
                     <p>Coordinates: <a href="${googleMapsUrl}" target="_blank">${selectedClimbData.coordinates}</a></p>
                     <button id="toDoButton">Add To List</button><br>
@@ -136,7 +138,7 @@ $( function() {
     });
 });
 
-// ${difficultyMap[selectedClimbData.difficulty_id]}
+// 
 // ${climbComment}
 
 
