@@ -1,0 +1,39 @@
+/* Adjust the size of the carousel */
+#carouselExampleIndicators {
+    width: 80%; /* Adjust the width as needed */
+    max-width: 1200px; /* Optional: Set a maximum width */
+    height: 700px; /* Adjust the height as needed */
+    margin: auto; /* Center the carousel horizontally */
+  }
+  
+  /* Ensure images fit within the carousel container */
+  #carouselExampleIndicators .carousel-inner .carousel-item img {
+    width: 100%; /* Makes sure the image covers the width of the carousel */
+    height: 100%; /* Ensures the image covers the height of the carousel */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+  }
+
+  .carousel-inner {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+  }
+  
+  .carousel-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .carousel-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  
