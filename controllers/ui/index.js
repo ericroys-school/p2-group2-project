@@ -5,6 +5,7 @@ import { Area } from "../../models/Area.js";
 import { Climb } from "../../models/Climb.js";
 import { Difficulty_YDS } from "../../models/Difficulty_YDS.js"
 import { Climb_Comment } from "../../models/Climb_Comment.js"
+import { User } from "../../models/User.js";
 
 
 function getVars(req){
@@ -56,7 +57,26 @@ router.get("/area", async (req, res) => {
   }
 });
 router.get("/profile", async (req, res) => {
-  res.render("profile", getVars(req));
+  let {uid, isLoggedIn } = req.session 
+  if (req.session && req.session.isLoggedIn) {
+    try{
+      let u = await User.findOne({
+        where: {
+          id: req.session.uid
+        }
+      })
+      if(!u){
+        res.render("error", {error: `Unable to find the user ${req.params.id}`})
+        return; 
+      }
+      let user = u.get({plain:true})
+      res.render("profile", {user, uid, isLoggedIn});
+    }catch(err){
+      console.error(err)
+      res.render("error", err)
+    }
+  }
+
 });
 router.get("/search", async (req, res) => {
   res.render("search", getVars(req));

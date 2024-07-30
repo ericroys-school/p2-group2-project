@@ -105,9 +105,11 @@
 #completeBody {
     height: 85%;               
     background-color: aliceblue; 
-    color: white;             
-    display: flex;             
-    justify-content: center;   
+    color: white;         
+    text-align: center;    
+    /* display: flex;              */
+    /* justify-content: center;   */
+    /* flex-direction: row;  */
     border-radius: 5px;       
 }
 

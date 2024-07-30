@@ -7,6 +7,7 @@ import {
   responseUnauthorized,
   responseUserError,
 } from "../../util.js";
+import { Climb } from "../../../models/Climb.js";
 export const userRouter = Router();
 
 /**
@@ -74,14 +75,14 @@ userRouter.post("/login", async (req, res) => {
 /**
  * Get a user by primary key id
  */
-userRouter.get("/:id", async (req, res) => {
-  try {
-    let u = await User.findByPk(req.params.id);
-    u ? res.status(200).json(u) : responseNotFound(res, req.params.id);
-  } catch (err) {
-    responseError(res, err);
-  }
-});
+// userRouter.get("/:id", async (req, res) => {
+//   try {
+//     let u = await User.findByPk(req.params.id);
+//     u ? res.status(200).json(u) : responseNotFound(res, req.params.id);
+//   } catch (err) {
+//     responseError(res, err);
+//   }
+// });
 
 userRouter.post("/logout", async (req, res) => {
   if (req.session && req.session.isLoggedIn) {
@@ -90,3 +91,22 @@ userRouter.post("/logout", async (req, res) => {
     });
   } else res.status(404).json();
 });
+
+userRouter.get("/todo", async (req, res) => {
+  if (!req.session || !req.session.isLoggedIn || !req.session.uid) {
+    responseUnauthorized(res);
+    return;
+  }
+
+  try {
+    let u = await User.findOne({
+      where: {
+        id: req.session.uid,
+      }, include: Climb
+    });
+    u ? res.status(200).json(u) : responseNotFound(res, req.params.id);
+  } catch (err) {
+    console.error(err)
+    responseError(res, err);
+  }
+})

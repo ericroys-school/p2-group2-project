@@ -1,23 +1,62 @@
-const userPath = '/api/user';
+import { renderChart } from "./d3-2.js";
 
-async function fetchData() {
-    try {
-        const response = await fetch(userPath);
+$(document).ready(function () {
+  renderTodoList();
+  renderChart();
+});
 
-        if (!response.ok) {
-            throw new Error('Network response was not ok ' + response.statusText);
-        }
+async function renderTodoList() {
+  const td = await getAssoc();
+  let climbs = td && td.climbs ? td.climbs : [];
 
-        const data = await response.json();
-
-        const userName = `${data.first_name} ${data.last_name}`;
-        const userEmail = data.email;
-
-        document.getElementById('user-name').textContent = `Name: ${userName}`;
-        document.getElementById('user-email').textContent = `Name: ${userEmail}`;
-    } catch (error) {
-        console.error('Problem with fetch call: ', error);
-    }
+  let a = $("#completeBody");
+  a.html = "";
+  let climbsHtml = "";
+  climbs.forEach(async (c) => {
+    const cc = await getClimb(c.id);
+    // console.log(JSON.stringify(cc))
+    a.append(
+      `<div><h4><p data-climbId="${cc.id}">${cc.name} - ${cc.difficulty_yd.name}</p></h4></div><br/>`
+    );
+  });
 }
 
-// fetchData();
+async function getClimb(climbid) {
+  let v;
+  try {
+    let res = await fetch(`/api/climb/${climbid}`);
+    if (res.status === 200) {
+      v = await res.json();
+    } else {
+      throw "Fetch of climb info failed";
+    }
+
+    return v;
+  } catch (err) {
+    $("#error-msg").text(err);
+  }
+}
+
+function setActiveList(list) {
+  let a = $("#completeBody");
+  a.empty();
+  let climbsHtml = "";
+  list.forEach((c) => {
+    climbsHtml += `<h4><p data-climbId="${c.id}">${c.name}</p></h4>`;
+  });
+  a.html(climbsHtml);
+}
+async function getAssoc() {
+  let v = {};
+  try {
+    let res = await fetch("/api/user/todo");
+    if (res.status === 200) {
+      v = await res.json();
+    } else {
+      throw "Fetch of user info failed";
+    }
+    return v;
+  } catch (err) {
+    $("#error-msg").text(err);
+  }
+}
