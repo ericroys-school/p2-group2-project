@@ -39,9 +39,10 @@ async function getClimb(climbid){
 function setActiveList(list){
 
     let a = $("#completeBody");
+    a.empty();
     let climbsHtml = "";
     list.forEach(c => {
-        console.log(c.name);
+        // console.log(c.name);
         climbsHtml += `<h4><p data-climbId="${c.id}">${c.name}</p></h4>`;
     });
     a.html(climbsHtml)
