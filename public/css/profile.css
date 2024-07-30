@@ -5,143 +5,143 @@
 }
 
 #containerOne {
-    display: flex;           /* Use flexbox for layout */
-    justify-content: center; /* Center items horizontally (optional) */
-    align-items: center;     /* Center items vertically (optional) */
-    gap: 20px;               /* Space between boxes */
-    width: 100%;             /* Full width of the parent container */
-    height: 40%;           /* Full viewport height (optional) */
-    padding: 10px;           /* Optional padding around the container */
+    display: flex;           
+    justify-content: center; 
+    align-items: center;     
+    gap: 20px;               
+    width: 100%;            
+    height: 40%;          
+    padding: 10px;           
 }
 
 #pbContainer {
-    width: 40%;            /* Fixed width of the boxes */
-    height: 100%;           /* Fixed height of the boxes */
-    background-color: aliceblue; /* Background color for visibility */
-    color: black;            /* Text color */
-    display: flex;           /* Center text inside the box */
+    width: 40%;            
+    height: 100%;           
+    background-color: aliceblue; 
+    color: black;           
+    display: flex;          
     flex-direction: column;
-    border-radius: 5px;      /* Rounded corners (optional) */
+    border-radius: 5px;     
     box-sizing: border-box;
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.664);
 }
 
 #pbHeader {
-    height: 15%;               /* Top box takes 10% of the height */
-    background-color: darkred; /* Background color for visibility */
-    color: white;              /* Text color */
-    display: flex;             /* Center text inside the box */
-    justify-content: center;   /* Horizontally center text */
-    align-items: center;       /* Vertically center text */
-    border-radius: 5px 5px 0px 0px;        /* Rounded corners (optional) */
+    height: 15%;             
+    background-color: darkred; 
+    color: white;              
+    display: flex;             
+    justify-content: center;   
+    align-items: center;       
+    border-radius: 5px 5px 0px 0px;       
     border-bottom: 2px solid black;
 }
 
 #pbBody {
-    height: 85%;               /* Bottom box takes 90% of the height */
-    background-color: aliceblue; /* Background color for visibility */
-    color: white;              /* Text color */
-    display: flex;             /* Center text inside the box */
-    justify-content: center;   /* Horizontally center text */
-    align-items: center;       /* Vertically center text */
-    border-radius: 5px;        /* Rounded corners (optional) */
+    height: 85%;               
+    background-color: aliceblue; 
+    color: white;              
+    display: flex;             
+    justify-content: center;   
+    align-items: center;       
+    border-radius: 5px;       
 }
 
 #toDoList {
-    width: 40%;            /* Fixed width of the boxes */
-    height: 100%;           /* Fixed height of the boxes */
-    background-color: aliceblue; /* Background color for visibility */
-    color: black;            /* Text color */
-    display: flex;           /* Center text inside the box */
+    width: 40%;           
+    height: 100%;          
+    background-color: aliceblue; 
+    color: black;            
+    display: flex;           
     flex-direction: column;
-    border-radius: 5px;      /* Rounded corners (optional) */
+    border-radius: 5px;     
     box-sizing: border-box;
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.664);
 }
 
 #toDoHeader {
-    height: 15%;               /* Top box takes 10% of the height */
-    background-color: #007bff; /* Background color for visibility */
-    color: white;              /* Text color */
-    display: flex;             /* Center text inside the box */
-    justify-content: center;   /* Horizontally center text */
-    align-items: center;       /* Vertically center text */
-    border-radius: 5px 5px 0px 0px;        /* Rounded corners (optional) */
+    height: 15%;              
+    background-color: #007bff; 
+    color: white;              
+    display: flex;             
+    justify-content: center;   
+    align-items: center;       
+    border-radius: 5px 5px 0px 0px;       
     border-bottom: 2px solid black;
 }
 
 #toDoBody {
-    height: 85%;               /* Bottom box takes 90% of the height */
-    background-color: aliceblue; /* Background color for visibility */
-    color: white;              /* Text color */
-    display: flex;             /* Center text inside the box */
-    justify-content: center;   /* Horizontally center text */
-    border-radius: 5px;        /* Rounded corners (optional) */
+    height: 85%;               
+    background-color: aliceblue; 
+    color: white;              
+    display: flex;             
+    justify-content: center;   
+    border-radius: 5px;       
 }
 
 #completeList {
-    width: 40%;            /* Fixed width of the boxes */
-    height: 100%;           /* Fixed height of the boxes */
-    background-color: aliceblue; /* Background color for visibility */
-    color: black;            /* Text color */
-    display: flex;           /* Center text inside the box */
+    width: 40%;            
+    height: 100%;         
+    background-color: aliceblue; 
+    color: black;            
+    display: flex;           
     flex-direction: column;
-    border-radius: 5px;      /* Rounded corners (optional) */
+    border-radius: 5px;     
     box-sizing: border-box;
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.664);
 }
 
 #completeHeader {
-    height: 15%;               /* Top box takes 10% of the height */
-    background-color: orange; /* Background color for visibility */
-    color: white;              /* Text color */
-    display: flex;             /* Center text inside the box */
-    justify-content: center;   /* Horizontally center text */
-    align-items: center;       /* Vertically center text */
-    border-radius: 5px 5px 0px 0px;        /* Rounded corners (optional) */
+    height: 15%;              
+    background-color: orange; 
+    color: white;              
+    display: flex;             
+    justify-content: center;   
+    align-items: center;       
+    border-radius: 5px 5px 0px 0px;       
     border-bottom: 2px solid black;
 }
 
 #completeBody {
-    height: 85%;               /* Bottom box takes 90% of the height */
-    background-color: aliceblue; /* Background color for visibility */
-    color: white;              /* Text color */
-    display: flex;             /* Center text inside the box */
-    justify-content: center;   /* Horizontally center text */
-    border-radius: 5px;        /* Rounded corners (optional) */
+    height: 85%;               
+    background-color: aliceblue; 
+    color: white;             
+    display: flex;             
+    justify-content: center;   
+    border-radius: 5px;       
 }
 
 #barGraph {
-    width: 40%;            /* Fixed width of the boxes */
-    height: 100%;           /* Fixed height of the boxes */
-    background-color: aliceblue; /* Background color for visibility */
-    color: black;            /* Text color */
-    display: flex;           /* Center text inside the box */
+    width: 40%;            
+    height: 100%;          
+    background-color: aliceblue; 
+    color: black;           
+    display: flex;           
     flex-direction: column;
-    border-radius: 5px;      /* Rounded corners (optional) */
+    border-radius: 5px;     
     box-sizing: border-box;
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.664);
 }
 
 #barHeader {
-    height: 15%;               /* Top box takes 10% of the height */
-    background-color: green; /* Background color for visibility */
-    color: white;              /* Text color */
-    display: flex;             /* Center text inside the box */
-    justify-content: center;   /* Horizontally center text */
-    align-items: center;       /* Vertically center text */
-    border-radius: 5px 5px 0px 0px;        /* Rounded corners (optional) */
+    height: 15%;              
+    background-color: green; 
+    color: white;             
+    display: flex;             
+    justify-content: center;   
+    align-items: center;       
+    border-radius: 5px 5px 0px 0px;       
     border-bottom: 2px solid black;
 }
 
 #barBody {
-    height: 85%;               /* Bottom box takes 90% of the height */
-    background-color: aliceblue; /* Background color for visibility */
-    color: white;              /* Text color */
-    display: flex;             /* Center text inside the box */
-    justify-content: center;   /* Horizontally center text */
-    align-items: center;       /* Vertically center text */
-    border-radius: 5px;        /* Rounded corners (optional) */
+    height: 85%;               
+    background-color: aliceblue; 
+    color: white;             
+    display: flex;             
+    justify-content: center;   
+    align-items: center;       
+    border-radius: 5px;       
 }
 
 #profilePic {
@@ -157,19 +157,19 @@
 }
 
 #profilePic img {
-    width: 100%;
+    width: 180%;
     height: auto;
     display: block;
 }
 
 #containerTwo {
-    display: flex;           /* Use flexbox for layout */
-    justify-content: center; /* Center items horizontally (optional) */
-    align-items: center;     /* Center items vertically (optional) */
-    gap: 20px;               /* Space between boxes */
-    width: 100%;             /* Full width of the parent container */
-    height: 40%;           /* Full viewport height (optional) */
-    padding: 10px;           /* Optional padding around the container */
+    display: flex;          
+    justify-content: center; 
+    align-items: center;     
+    gap: 20px;               
+    width: 100%;           
+    height: 40%;          
+    padding: 10px;           
 }
 
 #basicInfo {
