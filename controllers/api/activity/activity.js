@@ -1,5 +1,6 @@
 import { Router } from "express";
 import { Climb_Activity } from "../../../models/Climb_Activity.js";
+import { Climb } from "../../../models/Climb.js";
 import { responseError, responseUnauthorized } from "../../util.js";
 
 export const activeRoute = Router();
@@ -32,3 +33,27 @@ activeRoute.post("/:climbid", async (req, res) => {
     responseError(res, err);
   }
 });
+
+activeRoute.get("/todo/:active", async (req, res) => {
+
+  if (!req.session || !req.session.isLoggedIn || !req.session.uid) {
+    responseUnauthorized(res);
+    return;
+  }
+
+  try{
+    let x = await Climb_Activity.findAll({
+      where: {
+        user_id: req.session.uid,
+        completed: req.params.active
+      }, 
+      include: [Climb]
+    });
+    let xs = x.map(i => i.get({plain: true}));
+    res.status(200).json(xs);
+  }catch(err){
+    console.error(err)
+    responseError(res, err);
+    return;
+  }
+})
