@@ -1,6 +1,8 @@
-# p2-group2-project
+# Top Climbs By J.E.N.D
 
-Project 2 - Group 2
+![Unlicense](https://img.shields.io/badge/license-The_Unlicense-blue)
+
+Top Climbs By J.E.N.D.
 
 Description: This repo was created to showcase a website that allows users to create a profile and search for rock climbing routes in their area.
 
@@ -14,13 +16,15 @@ License: Refer to the LICENSE in the repo.
 
 Link To Render Application: https://climbing-app-project.onrender.com/
 
-![landingPage](image.png)
+![Main Page](image.png)
 
-![loginPage](image-1.png)
+![Sign Up](image-5.png)
 
-![signupPage](image-2.png)
+![Log In](image-6.png)
 
-![searchPagePartOne](image-3.png)
-![searchPagePartTwo](image-4.png)
+![Profile](image-1.png)
 
-![climbPage](image-5.png)
+![SearchOne](image-2.png)
+![SearchTwo](image-3.png)
+
+![Climb](image-4.png)
